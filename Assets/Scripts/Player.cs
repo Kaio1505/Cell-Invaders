@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
             vida -= inimigo.dano;
             inimigo.Destruir();
         }
-
+        //Kaio comeu seu cu
         if(vida <= 0)
         {
             Destroy(gameObject);
