@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Threading.Tasks;
 
 public class Player : MonoBehaviour
 {
@@ -7,6 +8,11 @@ public class Player : MonoBehaviour
     public Rigidbody2D rb;
     public Tiro projetilPrefab;
     public Transform gatilho;
+
+    void Start() 
+    {
+        Task.Delay(250);    
+    }
 
     void Update() 
     {
@@ -26,6 +32,10 @@ public class Player : MonoBehaviour
             vida -= inimigo.dano;
             inimigo.Destruir();
         }
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 4477c3658ea528aa155dc83230c9e331f5b2322f
         if(vida <= 0)
         {
             Destroy(gameObject);

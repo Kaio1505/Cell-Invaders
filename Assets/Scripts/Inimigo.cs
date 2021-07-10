@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class Inimigo : MonoBehaviour
@@ -9,6 +8,12 @@ public class Inimigo : MonoBehaviour
     public float speed;
     public Rigidbody2D rb;
     public Player player;
+
+
+    void Start() 
+    {
+        Task.Delay(50);    
+    }
 
     void Update()
     {
