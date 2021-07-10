@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Threading.Tasks;
 
 public class Player : MonoBehaviour
 {
@@ -7,6 +8,11 @@ public class Player : MonoBehaviour
     public Rigidbody2D rb;
     public Tiro projetilPrefab;
     public Transform gatilho;
+
+    void Start() 
+    {
+        Task.Delay(250);    
+    }
 
     void Update() 
     {
@@ -26,9 +32,7 @@ public class Player : MonoBehaviour
             vida -= inimigo.dano;
             inimigo.Destruir();
         }
-        //Kaio comeu seu cu
-        //Não foi o meu
-        //é isso
+        
         if(vida <= 0)
         {
             Destroy(gameObject);
