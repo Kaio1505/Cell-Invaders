@@ -28,6 +28,7 @@ public class Player : MonoBehaviour
         }
         //Kaio comeu seu cu
         //Não foi o meu
+        //é isso
         if(vida <= 0)
         {
             Destroy(gameObject);
