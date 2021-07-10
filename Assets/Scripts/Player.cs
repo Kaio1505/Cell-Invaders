@@ -32,10 +32,6 @@ public class Player : MonoBehaviour
             vida -= inimigo.dano;
             inimigo.Destruir();
         }
-<<<<<<< HEAD
-=======
-        
->>>>>>> 4477c3658ea528aa155dc83230c9e331f5b2322f
         if(vida <= 0)
         {
             Destroy(gameObject);
