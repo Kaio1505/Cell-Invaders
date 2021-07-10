@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
             inimigo.Destruir();
         }
         //Kaio comeu seu cu
+        //Não foi o meu
         if(vida <= 0)
         {
             Destroy(gameObject);
