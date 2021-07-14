@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Threading.Tasks;
 
 public class Player : MonoBehaviour
 {
@@ -11,7 +10,6 @@ public class Player : MonoBehaviour
 
     void Start() 
     {
-        Task.Delay(250);    
     }
 
     void Update() 
@@ -59,7 +57,7 @@ public class Player : MonoBehaviour
 
     void Atirar()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
             var tiro = Instantiate(projetilPrefab, gatilho.position, transform.rotation);
             var velocity = DirecaoMouse();

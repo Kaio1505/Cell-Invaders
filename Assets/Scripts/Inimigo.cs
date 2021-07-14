@@ -1,4 +1,3 @@
-using System.Threading.Tasks;
 using UnityEngine;
 
 public class Inimigo : MonoBehaviour
@@ -8,18 +7,26 @@ public class Inimigo : MonoBehaviour
     public float speed;
     public Rigidbody2D rb;
     public Player player;
-
+    public int startTime;
 
     void Start() 
     {
-        Task.Delay(50);    
+        rb.simulated = false;
+        Invoke("Begin", startTime);   
     }
 
     void Update()
     {
-        var velocity = new Vector2((player.transform.position.x - gameObject.transform.position.x),(player.transform.position.y - gameObject.transform.position.y));
-        velocity.Normalize();
-        rb.velocity = velocity*speed;
+        if(player == null)
+        { 
+            Destroy(gameObject);
+        }
+        else
+        {    
+            var velocity = new Vector2((player.transform.position.x - gameObject.transform.position.x),(player.transform.position.y - gameObject.transform.position.y));
+            velocity.Normalize();
+            rb.velocity = velocity*speed;
+        }
     }
 
     public void TakeDamage(int dano)
@@ -35,5 +42,10 @@ public class Inimigo : MonoBehaviour
     public void Destruir()
     {
         Destroy(gameObject);
+    }
+
+    void Begin()
+    {
+        rb.simulated = true;
     }
 }

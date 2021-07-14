@@ -124,10 +124,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 10
-  dano: 2
+  dano: 1
   speed: 1
   rb: {fileID: 4586350348647485089}
-  player: {fileID: 0}
+  player: {fileID: 6589195055672904487, guid: 5ce45bf6cbf34774aae367c859098091, type: 3}
+  startTime: 0
 --- !u!50 &4586350348647485089
 Rigidbody2D:
   serializedVersion: 4
