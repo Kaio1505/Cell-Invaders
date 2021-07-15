@@ -5,7 +5,7 @@ public class Player : MonoBehaviour
     public float speed;
     public int vida;
     public Rigidbody2D rb;
-    public Tiro projetilPrefab;
+    public AbstractTiro projetilPrefab;
     public Transform gatilho;
 
     void Start() 
@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
     {
         if(collision.CompareTag("Inimigo"))
         {
-            var inimigo = collision.GetComponent<Inimigo>();
+            var inimigo = collision.GetComponent<AbstractInimigo>();
             vida -= inimigo.dano;
             inimigo.Destruir();
         }
@@ -60,9 +60,7 @@ public class Player : MonoBehaviour
         if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
             var tiro = Instantiate(projetilPrefab, gatilho.position, transform.rotation);
-            var velocity = DirecaoMouse();
-            velocity.Normalize();
-            tiro.rb.velocity = velocity*tiro.speed;
+            tiro.Movimento();
         }
     }
 

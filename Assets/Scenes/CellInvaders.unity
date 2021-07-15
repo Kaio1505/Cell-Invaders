@@ -155,7 +155,7 @@ MonoBehaviour:
   playerPrefab: {fileID: 6589195055672904487, guid: 5ce45bf6cbf34774aae367c859098091, type: 3}
   inimigoPrefab: {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
   numeroDeInimigos: 10
-  intervaloEntreInimigos: 3
+  intervaloEntreInimigos: 1
 --- !u!4 &35261759
 Transform:
   m_ObjectHideFlags: 0

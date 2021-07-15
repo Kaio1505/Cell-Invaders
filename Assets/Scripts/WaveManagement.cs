@@ -3,7 +3,7 @@ using UnityEngine;
 public class WaveManagement : MonoBehaviour
 {
     public Player playerPrefab;
-    public Inimigo inimigoPrefab;
+    public AbstractInimigo inimigoPrefab;
     public int numeroDeInimigos;
     public int intervaloEntreInimigos;
 
