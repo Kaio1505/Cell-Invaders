@@ -6,16 +6,37 @@ public class WaveManagement : MonoBehaviour
     public AbstractInimigo inimigoPrefab;
     public int numeroDeInimigos;
     public int intervaloEntreInimigos;
+    public GameObject prefabVida;
+    int vida_atual;
+    public GameObject[] vetor_vidas;
+    public Player player;
 
     // Start is called before the first frame update
     void Start()
     {
-        var player = Instantiate(playerPrefab, new Vector3(0,0,0), Quaternion.identity);
+        
+        player = Instantiate(playerPrefab, new Vector3(0,0,0), Quaternion.identity);
         for(int i = 0; i < numeroDeInimigos; i++)
         {
             var inimigo = Instantiate(inimigoPrefab, GetPosition(), Quaternion.identity);
             inimigo.player = player;
             inimigo.startTime = i*intervaloEntreInimigos;
+        }
+        vida_atual = player.vida;
+        vetor_vidas = new GameObject[vida_atual];
+        float espacamento = 0.2f;
+        for (int i = 0; i < player.vida; i++)
+        {
+            vetor_vidas[i] = Instantiate(prefabVida, new Vector3(-1.5f + espacamento, 0.88f, 0), Quaternion.identity);
+            espacamento += 0.2f;
+        }
+    }
+    void Update()
+    {
+        if (player.vida < vida_atual)
+        {
+            Destroy(vetor_vidas[vida_atual-1]);
+            vida_atual=player.vida;
         }
     }
 

@@ -156,6 +156,9 @@ MonoBehaviour:
   inimigoPrefab: {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
   numeroDeInimigos: 10
   intervaloEntreInimigos: 1
+  prefabVida: {fileID: 2000423735601346470, guid: f6ccfd80f187d884eac12ba99c56dfff, type: 3}
+  vetor_vidas: []
+  player: {fileID: 0}
 --- !u!4 &35261759
 Transform:
   m_ObjectHideFlags: 0
