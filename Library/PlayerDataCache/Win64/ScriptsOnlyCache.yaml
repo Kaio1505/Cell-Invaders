@@ -10,7 +10,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -58,13 +57,13 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2318}
+      Script: {instanceID: 2312}
     - Class: 114
-      Script: {instanceID: 4654}
+      Script: {instanceID: 4650}
     - Class: 114
-      Script: {instanceID: 4952}
+      Script: {instanceID: 4948}
     - Class: 114
-      Script: {instanceID: 5396}
+      Script: {instanceID: 5392}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -74,6 +73,45 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    Assets/Scenes/GameOver.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 2614}
+    - Class: 114
+      Script: {instanceID: 2774}
+    - Class: 114
+      Script: {instanceID: 2992}
+    - Class: 114
+      Script: {instanceID: 3236}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Menu.unity:
     - Class: 1
@@ -93,17 +131,17 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2204}
+      Script: {instanceID: 1580}
     - Class: 114
-      Script: {instanceID: 2620}
+      Script: {instanceID: 2198}
     - Class: 114
-      Script: {instanceID: 2780}
+      Script: {instanceID: 2614}
     - Class: 114
-      Script: {instanceID: 2998}
+      Script: {instanceID: 2774}
     - Class: 114
-      Script: {instanceID: 3242}
+      Script: {instanceID: 2992}
     - Class: 114
-      Script: {instanceID: 22190}
+      Script: {instanceID: 3236}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -147,6 +185,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
     className: SpriteSkin
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Menu
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -569,6 +613,12 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 08247a2a63a4465439721b91ddc1b80d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Vidas
+  - hash:
+      serializedVersion: 2
       Hash: ef5c43f921427d03730f6ea4c848f07d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -669,20 +719,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: 08247a2a63a4465439721b91ddc1b80d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Vidas
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Menu
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/CellInvaders.unity
+  - Assets/Scenes/GameOver.unity
   playerPath: C:/Users/Kaio Vinicius/Desktop/teste/Cell-Invaders/Builds/Cell_invaders.exe
