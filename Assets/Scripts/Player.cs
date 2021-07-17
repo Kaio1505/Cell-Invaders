@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -33,6 +34,7 @@ public class Player : MonoBehaviour
         if(vida <= 0)
         {
             Destroy(gameObject);
+            SceneManager.LoadScene("GameOver");
         }
     }
 
