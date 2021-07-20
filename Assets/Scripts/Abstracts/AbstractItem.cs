@@ -3,7 +3,6 @@ using UnityEngine;
 public abstract class AbstractItem : MonoBehaviour
 {
     public int tempoDeVida;
-    public Player player;
 
     // Start is called before the first frame update
     void Start()
@@ -11,13 +10,22 @@ public abstract class AbstractItem : MonoBehaviour
         Invoke("Destruir", tempoDeVida);
     }
 
+    void OnTriggerEnter2D(Collider2D collision) 
+    {
+        if(collision.CompareTag("Player"))
+        {
+            var player = collision.GetComponent<Player>();
+            Efeito(player);
+        }
+    }
+
+    public virtual void Efeito(Player player)
+    {
+        Destruir();
+    }
+
     public virtual void Destruir()
     {
         Destroy(gameObject);
-    }
-
-    public virtual void Efeito()
-    {
-        Destruir();
     }
 }

@@ -5,6 +5,7 @@ public class Player : MonoBehaviour
 {
     public float speed;
     public int vida;
+    public int max;
     public Rigidbody2D rb;
     public AbstractTiro projetilPrefab;
     public Transform gatilho;
@@ -32,12 +33,6 @@ public class Player : MonoBehaviour
             inimigo.mortoPorTiro = false;
             inimigo.Destruir();
         }
-
-        if(collision.CompareTag("Item"))
-        {
-            collision.GetComponent<AbstractItem>().Efeito();
-        }
-
 
         if(vida <= 0)
         {

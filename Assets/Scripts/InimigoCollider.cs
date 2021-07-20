@@ -13,8 +13,10 @@ public class InimigoCollider : AbstractInimigo
     {
         if(mortoPorTiro)
         {
-            var item = Instantiate(itensDrop[0], transform.position, transform.rotation);
-            item.player = player;
+            if(Random.Range(0, 3) == 1)
+            {
+                var item = Instantiate(itensDrop[0], transform.position, transform.rotation);
+            }
         }
     }
 }
