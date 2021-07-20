@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - InimigoCollider
+    - ItemVida
     - Menu
     - Player
     - TiroBasico
@@ -10,6 +11,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -50,6 +52,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 58
       Script: {instanceID: 0}
+    - Class: 60
+      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 81
@@ -57,13 +61,15 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2312}
+      Script: {instanceID: 2332}
     - Class: 114
-      Script: {instanceID: 4650}
+      Script: {instanceID: 2720}
     - Class: 114
-      Script: {instanceID: 4948}
+      Script: {instanceID: 4672}
     - Class: 114
-      Script: {instanceID: 5392}
+      Script: {instanceID: 4972}
+    - Class: 114
+      Script: {instanceID: 5416}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -92,13 +98,13 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2614}
+      Script: {instanceID: 2634}
     - Class: 114
-      Script: {instanceID: 2774}
+      Script: {instanceID: 2796}
     - Class: 114
-      Script: {instanceID: 2992}
+      Script: {instanceID: 3014}
     - Class: 114
-      Script: {instanceID: 3236}
+      Script: {instanceID: 3258}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -131,17 +137,17 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1580}
+      Script: {instanceID: 1600}
     - Class: 114
-      Script: {instanceID: 2198}
+      Script: {instanceID: 2218}
     - Class: 114
-      Script: {instanceID: 2614}
+      Script: {instanceID: 2634}
     - Class: 114
-      Script: {instanceID: 2774}
+      Script: {instanceID: 2796}
     - Class: 114
-      Script: {instanceID: 2992}
+      Script: {instanceID: 3014}
     - Class: 114
-      Script: {instanceID: 3236}
+      Script: {instanceID: 3258}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -311,6 +317,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 2d0229492a87728469c809798eda4e42
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ItemVida
   - hash:
       serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
@@ -625,7 +637,7 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
-      Hash: 4a6f9d33581a903577de83c8e562c5b0
+      Hash: 44ee486e86b980053687214edc69b298
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InimigoCollider
