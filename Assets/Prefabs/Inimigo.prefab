@@ -129,6 +129,9 @@ MonoBehaviour:
   rb: {fileID: 4586350348647485089}
   player: {fileID: 6589195055672904487, guid: 5ce45bf6cbf34774aae367c859098091, type: 3}
   startTime: 0
+  mortoPorTiro: 1
+  itensDrop:
+  - {fileID: -705599846814931175, guid: 955bddf7babd3f945af2810dee6357c2, type: 3}
 --- !u!50 &4586350348647485089
 Rigidbody2D:
   serializedVersion: 4

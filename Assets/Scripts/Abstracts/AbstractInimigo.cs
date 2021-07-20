@@ -8,6 +8,8 @@ public abstract class AbstractInimigo : MonoBehaviour
     public Rigidbody2D rb;
     public Player player;
     public int startTime;
+    public bool mortoPorTiro;
+    public AbstractItem[] itensDrop = new AbstractItem[1];
 
     void Start() 
     {
@@ -39,6 +41,7 @@ public abstract class AbstractInimigo : MonoBehaviour
 
     public virtual void Destruir()
     {
+        DroparItem();
         Destroy(gameObject);
     }
 
@@ -48,4 +51,5 @@ public abstract class AbstractInimigo : MonoBehaviour
     }
 
     public abstract void Movimento();
+    public abstract void DroparItem();
 }

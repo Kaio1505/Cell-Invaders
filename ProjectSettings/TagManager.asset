@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Parede
   - Inimigo
+  - Item
   layers:
   - Default
   - TransparentFX

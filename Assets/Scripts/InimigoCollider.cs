@@ -8,4 +8,13 @@ public class InimigoCollider : AbstractInimigo
         velocity.Normalize();
         rb.velocity = velocity*speed;
     }
+
+    public override void DroparItem()
+    {
+        if(mortoPorTiro)
+        {
+            var item = Instantiate(itensDrop[0], transform.position, transform.rotation);
+            item.player = player;
+        }
+    }
 }

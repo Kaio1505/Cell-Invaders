@@ -29,8 +29,16 @@ public class Player : MonoBehaviour
         {
             var inimigo = collision.GetComponent<AbstractInimigo>();
             vida -= inimigo.dano;
+            inimigo.mortoPorTiro = false;
             inimigo.Destruir();
         }
+
+        if(collision.CompareTag("Item"))
+        {
+            collision.GetComponent<AbstractItem>().Efeito();
+        }
+
+
         if(vida <= 0)
         {
             Destroy(gameObject);
