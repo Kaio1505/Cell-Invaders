@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -9,9 +10,11 @@ public class Player : MonoBehaviour
     public Rigidbody2D rb;
     public AbstractTiro projetilPrefab;
     public Transform gatilho;
+    Text numVidas;
 
     void Start() 
     {
+        numVidas = GameObject.Find("NumVidas").GetComponent<Text>();
     }
 
     void Update() 
@@ -22,6 +25,16 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         Movimento();
+    }
+
+    void LateUpdate() 
+    {
+        numVidas.text = $"{vida}";
+
+        if(vida == max)
+        {
+            numVidas.text = $"{vida} (MAX)";
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision) 

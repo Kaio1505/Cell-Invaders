@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dano: 2
-  speed: 2
+  speed: 3
   rb: {fileID: 5520475379393153949}
 --- !u!58 &2571007784687264318
 CircleCollider2D:

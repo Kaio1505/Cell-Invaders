@@ -33,6 +33,7 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/CellInvaders.unity:
@@ -61,16 +62,30 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2332}
+      Script: {instanceID: 1506}
     - Class: 114
-      Script: {instanceID: 2720}
+      Script: {instanceID: 2198}
     - Class: 114
-      Script: {instanceID: 4672}
+      Script: {instanceID: 2312}
     - Class: 114
-      Script: {instanceID: 4972}
+      Script: {instanceID: 2614}
     - Class: 114
-      Script: {instanceID: 5416}
+      Script: {instanceID: 2700}
+    - Class: 114
+      Script: {instanceID: 2776}
+    - Class: 114
+      Script: {instanceID: 2994}
+    - Class: 114
+      Script: {instanceID: 3238}
+    - Class: 114
+      Script: {instanceID: 4652}
+    - Class: 114
+      Script: {instanceID: 4952}
+    - Class: 114
+      Script: {instanceID: 5396}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -79,6 +94,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/GameOver.unity:
     - Class: 1
@@ -98,13 +119,13 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2634}
+      Script: {instanceID: 2614}
     - Class: 114
-      Script: {instanceID: 2796}
+      Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 3014}
+      Script: {instanceID: 2994}
     - Class: 114
-      Script: {instanceID: 3258}
+      Script: {instanceID: 3238}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -137,17 +158,17 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1600}
+      Script: {instanceID: 1580}
     - Class: 114
-      Script: {instanceID: 2218}
+      Script: {instanceID: 2198}
     - Class: 114
-      Script: {instanceID: 2634}
+      Script: {instanceID: 2614}
     - Class: 114
-      Script: {instanceID: 2796}
+      Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 3014}
+      Script: {instanceID: 2994}
     - Class: 114
-      Script: {instanceID: 3258}
+      Script: {instanceID: 3238}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -289,7 +310,7 @@ ScriptsOnlyBuild:
     className: CinemachinePixelPerfect
   - hash:
       serializedVersion: 2
-      Hash: 9a5d588da073915f4cb4f7e0a1c78b16
+      Hash: 21bec4f716eb92407054c4f10ec0bc6c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -319,7 +340,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: 2d0229492a87728469c809798eda4e42
+      Hash: e9670656f5327a0492bdd828d0ced69b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ItemVida
@@ -625,12 +646,6 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 08247a2a63a4465439721b91ddc1b80d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Vidas
-  - hash:
-      serializedVersion: 2
       Hash: ef5c43f921427d03730f6ea4c848f07d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -697,7 +712,7 @@ ScriptsOnlyBuild:
     className: BufferManager
   - hash:
       serializedVersion: 2
-      Hash: 3ea61ef3ef4ef7f62db7bf8ec07241b9
+      Hash: ef9ef4514eac80fac7eb1971cddbd76b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WaveManagement
@@ -736,4 +751,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/CellInvaders.unity
   - Assets/Scenes/GameOver.unity
-  playerPath: C:/Users/Kaio Vinicius/Desktop/teste/Cell-Invaders/Builds/Cell_invaders.exe
+  playerPath: C:/Users/User/Documents/GitHub/Cell-Invaders/Builds/Cell_invaders.exe
