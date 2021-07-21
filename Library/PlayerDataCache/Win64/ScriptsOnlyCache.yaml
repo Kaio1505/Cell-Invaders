@@ -62,27 +62,27 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1506}
+      Script: {instanceID: 1524}
     - Class: 114
-      Script: {instanceID: 2198}
+      Script: {instanceID: 2216}
     - Class: 114
-      Script: {instanceID: 2312}
+      Script: {instanceID: 2330}
     - Class: 114
-      Script: {instanceID: 2614}
+      Script: {instanceID: 2632}
     - Class: 114
-      Script: {instanceID: 2700}
+      Script: {instanceID: 2718}
     - Class: 114
-      Script: {instanceID: 2776}
+      Script: {instanceID: 2794}
     - Class: 114
-      Script: {instanceID: 2994}
+      Script: {instanceID: 3012}
     - Class: 114
-      Script: {instanceID: 3238}
+      Script: {instanceID: 3256}
     - Class: 114
-      Script: {instanceID: 4652}
+      Script: {instanceID: 4668}
     - Class: 114
-      Script: {instanceID: 4952}
+      Script: {instanceID: 4968}
     - Class: 114
-      Script: {instanceID: 5396}
+      Script: {instanceID: 5412}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -119,13 +119,13 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2614}
+      Script: {instanceID: 2632}
     - Class: 114
-      Script: {instanceID: 2776}
+      Script: {instanceID: 2794}
     - Class: 114
-      Script: {instanceID: 2994}
+      Script: {instanceID: 3012}
     - Class: 114
-      Script: {instanceID: 3238}
+      Script: {instanceID: 3256}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -147,37 +147,29 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 20
       Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
     - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1580}
+      Script: {instanceID: 1524}
     - Class: 114
-      Script: {instanceID: 2198}
+      Script: {instanceID: 1598}
     - Class: 114
-      Script: {instanceID: 2614}
+      Script: {instanceID: 2632}
     - Class: 114
-      Script: {instanceID: 2776}
+      Script: {instanceID: 2794}
     - Class: 114
-      Script: {instanceID: 2994}
+      Script: {instanceID: 3012}
     - Class: 114
-      Script: {instanceID: 3238}
+      Script: {instanceID: 3256}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
-      Script: {instanceID: 0}
-    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -214,7 +206,7 @@ ScriptsOnlyBuild:
     className: SpriteSkin
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 3043dbe60b5c4db06fb90533f7cd95cd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Menu
@@ -751,4 +743,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/CellInvaders.unity
   - Assets/Scenes/GameOver.unity
-  playerPath: C:/Users/User/Documents/GitHub/Cell-Invaders/Builds/Cell_invaders.exe
+  playerPath: C:/Users/Kaio Vinicius/Desktop/teste/Cell-Invaders/Builds/Cell_invaders.exe
