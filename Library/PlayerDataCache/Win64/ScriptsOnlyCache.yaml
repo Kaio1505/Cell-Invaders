@@ -62,27 +62,27 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1524}
+      Script: {instanceID: 1506}
     - Class: 114
-      Script: {instanceID: 2216}
+      Script: {instanceID: 2198}
     - Class: 114
-      Script: {instanceID: 2330}
+      Script: {instanceID: 2312}
     - Class: 114
-      Script: {instanceID: 2632}
+      Script: {instanceID: 2614}
     - Class: 114
-      Script: {instanceID: 2718}
+      Script: {instanceID: 2700}
     - Class: 114
-      Script: {instanceID: 2794}
+      Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 3012}
+      Script: {instanceID: 2994}
     - Class: 114
-      Script: {instanceID: 3256}
+      Script: {instanceID: 3238}
     - Class: 114
-      Script: {instanceID: 4668}
+      Script: {instanceID: 4650}
     - Class: 114
-      Script: {instanceID: 4968}
+      Script: {instanceID: 4950}
     - Class: 114
-      Script: {instanceID: 5412}
+      Script: {instanceID: 5394}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -119,13 +119,13 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2632}
+      Script: {instanceID: 2614}
     - Class: 114
-      Script: {instanceID: 2794}
+      Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 3012}
+      Script: {instanceID: 2994}
     - Class: 114
-      Script: {instanceID: 3256}
+      Script: {instanceID: 3238}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -154,17 +154,54 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1524}
+      Script: {instanceID: 1506}
     - Class: 114
-      Script: {instanceID: 1598}
+      Script: {instanceID: 1580}
     - Class: 114
-      Script: {instanceID: 2632}
+      Script: {instanceID: 2614}
     - Class: 114
-      Script: {instanceID: 2794}
+      Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 3012}
+      Script: {instanceID: 2994}
     - Class: 114
-      Script: {instanceID: 3256}
+      Script: {instanceID: 3238}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Winner.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1506}
+    - Class: 114
+      Script: {instanceID: 2614}
+    - Class: 114
+      Script: {instanceID: 2776}
+    - Class: 114
+      Script: {instanceID: 2994}
+    - Class: 114
+      Script: {instanceID: 3238}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -704,7 +741,7 @@ ScriptsOnlyBuild:
     className: BufferManager
   - hash:
       serializedVersion: 2
-      Hash: ef9ef4514eac80fac7eb1971cddbd76b
+      Hash: 7e4b08d7ff0917e422af24261c277556
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WaveManagement
@@ -743,4 +780,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/CellInvaders.unity
   - Assets/Scenes/GameOver.unity
+  - Assets/Scenes/Winner.unity
   playerPath: C:/Users/Kaio Vinicius/Desktop/teste/Cell-Invaders/Builds/Cell_invaders.exe
