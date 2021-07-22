@@ -59,30 +59,34 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 1454}
     - Class: 114
-      Script: {instanceID: 1526}
+      Script: {instanceID: 1540}
     - Class: 114
-      Script: {instanceID: 2330}
+      Script: {instanceID: 2344}
     - Class: 114
-      Script: {instanceID: 2632}
+      Script: {instanceID: 2646}
     - Class: 114
-      Script: {instanceID: 2718}
+      Script: {instanceID: 2732}
     - Class: 114
-      Script: {instanceID: 2794}
+      Script: {instanceID: 2808}
     - Class: 114
-      Script: {instanceID: 3012}
+      Script: {instanceID: 3026}
     - Class: 114
-      Script: {instanceID: 3256}
+      Script: {instanceID: 3270}
     - Class: 114
-      Script: {instanceID: 4668}
+      Script: {instanceID: 4682}
     - Class: 114
-      Script: {instanceID: 4968}
+      Script: {instanceID: 4982}
     - Class: 114
-      Script: {instanceID: 5412}
+      Script: {instanceID: 5426}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -119,17 +123,17 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1526}
+      Script: {instanceID: 1540}
     - Class: 114
-      Script: {instanceID: 1600}
+      Script: {instanceID: 1614}
     - Class: 114
-      Script: {instanceID: 2632}
+      Script: {instanceID: 2646}
     - Class: 114
-      Script: {instanceID: 2794}
+      Script: {instanceID: 2808}
     - Class: 114
-      Script: {instanceID: 3012}
+      Script: {instanceID: 3026}
     - Class: 114
-      Script: {instanceID: 3256}
+      Script: {instanceID: 3270}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -153,25 +157,39 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 20
       Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1526}
+      Script: {instanceID: 1454}
     - Class: 114
-      Script: {instanceID: 1600}
+      Script: {instanceID: 1540}
     - Class: 114
-      Script: {instanceID: 2632}
+      Script: {instanceID: 1614}
     - Class: 114
-      Script: {instanceID: 2794}
+      Script: {instanceID: 2646}
     - Class: 114
-      Script: {instanceID: 3012}
+      Script: {instanceID: 2808}
     - Class: 114
-      Script: {instanceID: 3256}
+      Script: {instanceID: 3026}
+    - Class: 114
+      Script: {instanceID: 3270}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -199,17 +217,17 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1526}
+      Script: {instanceID: 1540}
     - Class: 114
-      Script: {instanceID: 1600}
+      Script: {instanceID: 1614}
     - Class: 114
-      Script: {instanceID: 2632}
+      Script: {instanceID: 2646}
     - Class: 114
-      Script: {instanceID: 2794}
+      Script: {instanceID: 2808}
     - Class: 114
-      Script: {instanceID: 3012}
+      Script: {instanceID: 3026}
     - Class: 114
-      Script: {instanceID: 3256}
+      Script: {instanceID: 3270}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -257,7 +275,7 @@ ScriptsOnlyBuild:
     className: SpriteSkin
   - hash:
       serializedVersion: 2
-      Hash: 11a879f81221def82ac404cc5d6ba858
+      Hash: 1618aea0b2f77b728139868ce09a9420
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Menu
@@ -789,4 +807,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/CellInvaders.unity
   - Assets/Scenes/GameOver.unity
   - Assets/Scenes/Winner.unity
-  playerPath: C:/Users/User/Documents/GitHub/Cell-Invaders/Builds/Cell_invaders.exe
+  playerPath: C:/Users/Kaio Vinicius/Desktop/teste/Cell-Invaders/Builds/Cell_invaders.exe

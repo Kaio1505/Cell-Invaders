@@ -14,7 +14,6 @@ public class WaveManagement : MonoBehaviour
     public Canvas Pai;
     AbstractInimigo[] inimigos_totais;
     int carregou;
-
     IEnumerator Start()
     {
         carregou = 0;
@@ -23,8 +22,8 @@ public class WaveManagement : MonoBehaviour
         tela_instrucao.transform.position.Set(0, 0.4f, 0);
         var Texto = Instantiate(PrefabTexto, new Vector3(0, -80, 0), Quaternion.identity);
         Texto.transform.SetParent(Pai.transform, false);
-        Texto.text = "Este inimigo é o seu primeiro desafio, ele irá te seguir até chegar em você, caso encoste você perde uma vida, porém ele é destruido também" +
-            "Atire nele para tentar destruí-lo antes que ele se aproxime";
+        Texto.text = "Este inimigo é o seu primeiro desafio, ele irá te seguir até chegar em você, caso encoste você perde uma vida, porém ele é destruido também.\n" +
+            "Atire nele para tentar destruí-lo antes que ele se aproxime.";
         yield return new WaitForSeconds(6f);
         Destroy(tela_instrucao);
         Destroy(Texto);
