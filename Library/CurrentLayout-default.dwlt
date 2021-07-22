@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 881, y: 492}
-  m_MaxSize: {x: 16006, y: 14042}
+  m_MinSize: {x: 879, y: 492}
+  m_MaxSize: {x: 16004, y: 14042}
   vertical: 0
-  controlID: 40
+  controlID: 59
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 1072
     height: 731
-  m_MinSize: {x: 605, y: 492}
-  m_MaxSize: {x: 12005, y: 14042}
+  m_MinSize: {x: 603, y: 492}
+  m_MaxSize: {x: 12003, y: 14042}
   vertical: 1
-  controlID: 41
+  controlID: 89
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,10 +170,10 @@ MonoBehaviour:
     y: 0
     width: 1072
     height: 424
-  m_MinSize: {x: 605, y: 221}
-  m_MaxSize: {x: 12005, y: 4021}
+  m_MinSize: {x: 603, y: 221}
+  m_MaxSize: {x: 12003, y: 4021}
   vertical: 0
-  controlID: 42
+  controlID: 90
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,8 +245,8 @@ MonoBehaviour:
     y: 0
     width: 669
     height: 424
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -424,21 +424,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: f83fffff1240ffff1440ffff1840ffff1c40ffff2040ffff9243ffffac43ffffae43ffffb243ffffb643ffffba43ffff7046ffff8a46ffff4c47ffff5047ffff5847ffff5c47ffff1a48ffff3448fffff648fffffa48ffff0249ffff0649ffff524bffff6c4bffff2e4cffff324cffff3a4cffff3e4cffffee4cffff084dffffca4dffffce4dffffd64dffffda4dffff964effffb04effff724fffff764fffff7e4fffff824fffffc650ffffe050ffffa251ffffa651ffffae51ffffb251ffff2a9affff449affff069bffff0a9bffff129bffff169bffff14a9ffff2ea9ffff3aa9ffff48a9ffff56a9ffff64a9ffff1aabffff34abfffff6abfffffaabffff02acffff06acffffceafffffe8afffffaab0ffffaeb0ffffb6b0ffffbab0ffff36b2ffffaab2ffff4ef6ffff88faffff50530000ea6000007a6600009c660000
+      m_ExpandedIDs: a0edffffbaedffff7ceeffff80eeffff88eeffff8eeeffff62efffff7cefffff42f0ffff4af0ffff56f0ffff60f0ffff30f1ffff4af1ffff10f2ffff18f2ffff24f2ffff2ef2ffffeef2ffff08f3ffffcaf3ffffcef3ffffd6f3ffffdcf3ffff66f9ffff40fbffff48430000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: set-different-virus-bacteria-shapes_1017-23915-removebg-preview_0
-        m_OriginalName: set-different-virus-bacteria-shapes_1017-23915-removebg-preview_0
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -43470
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -602,36 +602,36 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sounds
+    - Assets/Scripts/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sounds
+  - Assets/Scripts/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Kaio Vinicius\Desktop\teste\Cell-Invaders
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 26}
-    m_SelectedIDs: be640000
-    m_LastClickedID: 25790
-    m_ExpandedIDs: 00000000464300004a43000000ca9a3b
+    scrollPos: {x: 0, y: 106}
+    m_SelectedIDs: 16430000
+    m_LastClickedID: 17174
+    m_ExpandedIDs: 0000000060420000624200007242000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Scenes
-      m_OriginalName: Scenes
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 20930
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 
@@ -645,7 +645,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000046430000
+    m_ExpandedIDs: 000000006042000062420000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

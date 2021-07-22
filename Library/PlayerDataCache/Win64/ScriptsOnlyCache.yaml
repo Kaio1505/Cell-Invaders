@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - GameOver
     - InimigoCollider
     - ItemVida
     - Menu
@@ -68,25 +69,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1454}
     - Class: 114
-      Script: {instanceID: 1540}
+      Script: {instanceID: 1508}
     - Class: 114
-      Script: {instanceID: 2344}
+      Script: {instanceID: 2312}
     - Class: 114
-      Script: {instanceID: 2646}
+      Script: {instanceID: 2614}
     - Class: 114
-      Script: {instanceID: 2732}
+      Script: {instanceID: 2700}
     - Class: 114
-      Script: {instanceID: 2808}
+      Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 3026}
+      Script: {instanceID: 2994}
     - Class: 114
-      Script: {instanceID: 3270}
+      Script: {instanceID: 3238}
     - Class: 114
-      Script: {instanceID: 4682}
+      Script: {instanceID: 4650}
     - Class: 114
-      Script: {instanceID: 4982}
+      Script: {instanceID: 4950}
     - Class: 114
-      Script: {instanceID: 5426}
+      Script: {instanceID: 5394}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -120,21 +121,29 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1540}
+      Script: {instanceID: 1454}
     - Class: 114
-      Script: {instanceID: 1614}
+      Script: {instanceID: 1508}
     - Class: 114
-      Script: {instanceID: 2646}
+      Script: {instanceID: 2614}
     - Class: 114
-      Script: {instanceID: 2808}
+      Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 3026}
+      Script: {instanceID: 2994}
     - Class: 114
-      Script: {instanceID: 3270}
+      Script: {instanceID: 3238}
+    - Class: 114
+      Script: {instanceID: 17398}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -176,17 +185,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1454}
     - Class: 114
-      Script: {instanceID: 1540}
+      Script: {instanceID: 1508}
     - Class: 114
-      Script: {instanceID: 1614}
+      Script: {instanceID: 1582}
     - Class: 114
-      Script: {instanceID: 2646}
+      Script: {instanceID: 2614}
     - Class: 114
-      Script: {instanceID: 2808}
+      Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 3026}
+      Script: {instanceID: 2994}
     - Class: 114
-      Script: {instanceID: 3270}
+      Script: {instanceID: 3238}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -217,17 +226,17 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1540}
+      Script: {instanceID: 1508}
     - Class: 114
-      Script: {instanceID: 1614}
+      Script: {instanceID: 1582}
     - Class: 114
-      Script: {instanceID: 2646}
+      Script: {instanceID: 2614}
     - Class: 114
-      Script: {instanceID: 2808}
+      Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 3026}
+      Script: {instanceID: 2994}
     - Class: 114
-      Script: {instanceID: 3270}
+      Script: {instanceID: 3238}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -801,6 +810,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: 1618aea0b2f77b728139868ce09a9420
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameOver
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
