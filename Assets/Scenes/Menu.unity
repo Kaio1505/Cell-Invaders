@@ -235,7 +235,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c56f67aa4c687634d8e8ee3720b604cc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8fdbbe0715157d645afa46b230599987, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -456,6 +456,16 @@ MonoBehaviour:
   contagion: {fileID: 12800000, guid: 41196c499997e6c4eafc53724a4bc2ca, type: 3}
   Pai: {fileID: 312194185}
   subiu: 0
+  inimigos:
+  - {fileID: 3938550849992592451, guid: f715d97030117f046bfa1705f8e0cb00, type: 3}
+  - {fileID: 5090717266935259993, guid: 44c3edd98f10d3c4bad399f99d16bfc4, type: 3}
+  - {fileID: 672034809123318901, guid: b42476250d3155d4183b8b8a451f7a32, type: 3}
+  - {fileID: 2596993125353770326, guid: 661004dccbc9c6049b7b49ef0e3c25ab, type: 3}
+  - {fileID: 1319307421742464403, guid: 26ad9d7c2448f094184bccfb94d72b56, type: 3}
+  - {fileID: 872839903447975189, guid: e2ea5c0cee630e245a88c8f1df5c3473, type: 3}
+  - {fileID: 859159343177906548, guid: b7422939c1786d34eaab7cf3cbb0ba83, type: 3}
+  - {fileID: 6379381369310764420, guid: c1bf7ef4c4d95244192e3c0b2ec3a398, type: 3}
+  camera_dimensao: {fileID: 1525200937}
 --- !u!1 &1525200935
 GameObject:
   m_ObjectHideFlags: 0

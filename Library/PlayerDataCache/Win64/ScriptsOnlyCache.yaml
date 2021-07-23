@@ -8,6 +8,7 @@ ScriptsOnlyBuild:
     - Player
     - TiroBasico
     - WaveManagement
+    - Win
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -69,7 +70,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1454}
     - Class: 114
-      Script: {instanceID: 1508}
+      Script: {instanceID: 1456}
     - Class: 114
       Script: {instanceID: 2312}
     - Class: 114
@@ -77,17 +78,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2700}
     - Class: 114
-      Script: {instanceID: 2776}
+      Script: {instanceID: 2778}
     - Class: 114
-      Script: {instanceID: 2994}
+      Script: {instanceID: 2996}
     - Class: 114
-      Script: {instanceID: 3238}
+      Script: {instanceID: 3240}
     - Class: 114
-      Script: {instanceID: 4650}
+      Script: {instanceID: 4652}
     - Class: 114
-      Script: {instanceID: 4950}
+      Script: {instanceID: 4952}
     - Class: 114
-      Script: {instanceID: 5394}
+      Script: {instanceID: 5396}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -130,17 +131,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1454}
     - Class: 114
-      Script: {instanceID: 1508}
+      Script: {instanceID: 1456}
     - Class: 114
       Script: {instanceID: 2614}
     - Class: 114
-      Script: {instanceID: 2776}
+      Script: {instanceID: 2750}
     - Class: 114
-      Script: {instanceID: 2994}
+      Script: {instanceID: 2778}
     - Class: 114
-      Script: {instanceID: 3238}
+      Script: {instanceID: 2996}
     - Class: 114
-      Script: {instanceID: 17398}
+      Script: {instanceID: 3240}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -172,6 +173,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
@@ -185,17 +188,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1454}
     - Class: 114
-      Script: {instanceID: 1508}
+      Script: {instanceID: 1456}
     - Class: 114
       Script: {instanceID: 1582}
     - Class: 114
       Script: {instanceID: 2614}
     - Class: 114
-      Script: {instanceID: 2776}
+      Script: {instanceID: 2778}
     - Class: 114
-      Script: {instanceID: 2994}
+      Script: {instanceID: 2996}
     - Class: 114
-      Script: {instanceID: 3238}
+      Script: {instanceID: 3240}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -219,25 +222,33 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 20
       Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1508}
+      Script: {instanceID: 1454}
     - Class: 114
-      Script: {instanceID: 1582}
+      Script: {instanceID: 1456}
     - Class: 114
       Script: {instanceID: 2614}
     - Class: 114
-      Script: {instanceID: 2776}
+      Script: {instanceID: 2778}
     - Class: 114
-      Script: {instanceID: 2994}
+      Script: {instanceID: 2996}
     - Class: 114
-      Script: {instanceID: 3238}
+      Script: {instanceID: 3240}
+    - Class: 114
+      Script: {instanceID: 21344}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -254,6 +265,12 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
+      Hash: a6e561615949734e9f12f9b61661f43e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
+  - hash:
+      serializedVersion: 2
       Hash: 699619b86d9359741a4f58540298c80b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -264,12 +281,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
-  - hash:
-      serializedVersion: 2
-      Hash: a6e561615949734e9f12f9b61661f43e
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
   - hash:
       serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
@@ -284,7 +295,7 @@ ScriptsOnlyBuild:
     className: SpriteSkin
   - hash:
       serializedVersion: 2
-      Hash: 1618aea0b2f77b728139868ce09a9420
+      Hash: 21441b1a38e8ed83a2c734e3b10ea508
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Menu
@@ -414,6 +425,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 1618aea0b2f77b728139868ce09a9420
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameOver
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -815,7 +832,7 @@ ScriptsOnlyBuild:
       Hash: 1618aea0b2f77b728139868ce09a9420
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: GameOver
+    className: Win
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
