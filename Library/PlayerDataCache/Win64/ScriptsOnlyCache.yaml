@@ -2,10 +2,10 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - GameOver
-    - InimigoCollider
     - ItemVida
     - Menu
     - Player
+    - Suicida
     - TiroBasico
     - WaveManagement
     - Win
@@ -72,23 +72,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1456}
     - Class: 114
-      Script: {instanceID: 2312}
+      Script: {instanceID: 2314}
     - Class: 114
-      Script: {instanceID: 2614}
+      Script: {instanceID: 2616}
     - Class: 114
-      Script: {instanceID: 2700}
+      Script: {instanceID: 2702}
     - Class: 114
-      Script: {instanceID: 2778}
+      Script: {instanceID: 2780}
     - Class: 114
-      Script: {instanceID: 2996}
+      Script: {instanceID: 2998}
     - Class: 114
-      Script: {instanceID: 3240}
+      Script: {instanceID: 3242}
     - Class: 114
-      Script: {instanceID: 4652}
+      Script: {instanceID: 4654}
     - Class: 114
-      Script: {instanceID: 4952}
+      Script: {instanceID: 4954}
     - Class: 114
-      Script: {instanceID: 5396}
+      Script: {instanceID: 5398}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -133,15 +133,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1456}
     - Class: 114
-      Script: {instanceID: 2614}
+      Script: {instanceID: 2616}
     - Class: 114
-      Script: {instanceID: 2750}
+      Script: {instanceID: 2752}
     - Class: 114
-      Script: {instanceID: 2778}
+      Script: {instanceID: 2780}
     - Class: 114
-      Script: {instanceID: 2996}
+      Script: {instanceID: 2998}
     - Class: 114
-      Script: {instanceID: 3240}
+      Script: {instanceID: 3242}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -192,13 +192,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1582}
     - Class: 114
-      Script: {instanceID: 2614}
+      Script: {instanceID: 2616}
     - Class: 114
-      Script: {instanceID: 2778}
+      Script: {instanceID: 2780}
     - Class: 114
-      Script: {instanceID: 2996}
+      Script: {instanceID: 2998}
     - Class: 114
-      Script: {instanceID: 3240}
+      Script: {instanceID: 3242}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -237,15 +237,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1456}
     - Class: 114
-      Script: {instanceID: 2614}
+      Script: {instanceID: 1954}
     - Class: 114
-      Script: {instanceID: 2778}
+      Script: {instanceID: 2616}
     - Class: 114
-      Script: {instanceID: 2996}
+      Script: {instanceID: 2780}
     - Class: 114
-      Script: {instanceID: 3240}
+      Script: {instanceID: 2998}
     - Class: 114
-      Script: {instanceID: 21344}
+      Script: {instanceID: 3242}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -359,6 +359,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 1618aea0b2f77b728139868ce09a9420
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Win
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -736,7 +742,7 @@ ScriptsOnlyBuild:
       Hash: 44ee486e86b980053687214edc69b298
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: InimigoCollider
+    className: Suicida
   - hash:
       serializedVersion: 2
       Hash: 87ad3705a58f19c47136728d4a6e9c47
@@ -827,16 +833,10 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: 1618aea0b2f77b728139868ce09a9420
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Win
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/CellInvaders.unity
   - Assets/Scenes/GameOver.unity
   - Assets/Scenes/Winner.unity
-  playerPath: C:/Users/Kaio Vinicius/Desktop/teste/Cell-Invaders/Builds/Cell_invaders.exe
+  playerPath: C:/Users/User/Documents/GitHub/Cell-Invaders/Builds/Cell_invaders.exe

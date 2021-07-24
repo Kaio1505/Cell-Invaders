@@ -30,11 +30,6 @@ public class Player : MonoBehaviour
     void LateUpdate() 
     {
         numVidas.text = $"{vida}";
-
-        if(vida == max)
-        {
-            numVidas.text = $"{vida} (MAX)";
-        }
     }
 
     void OnTriggerEnter2D(Collider2D collision) 
