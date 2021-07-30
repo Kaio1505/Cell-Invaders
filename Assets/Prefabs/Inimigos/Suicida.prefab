@@ -125,7 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 10
   dano: 1
-  speed: 1
+  speed: 0.1
   rb: {fileID: 4586350348647485089}
   player: {fileID: 6589195055672904487, guid: 5ce45bf6cbf34774aae367c859098091, type: 3}
   startTime: 0
