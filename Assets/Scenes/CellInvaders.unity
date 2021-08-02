@@ -154,7 +154,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 6589195055672904487, guid: 5ce45bf6cbf34774aae367c859098091, type: 3}
   inimigoPrefab: {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
-  inimigoPrefab2: {fileID: -9146420706851664603, guid: 44c3edd98f10d3c4bad399f99d16bfc4, type: 3}
   numeroDeInimigos: 10
   intervaloEntreInimigos: 1
   sprite_inimigo: {fileID: 6243755456774039268, guid: ebd03c4cd972b1242990ce6676201b7e, type: 3}
@@ -357,7 +356,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.1, y: 0.8}
   m_AnchorMax: {x: 0.2, y: 1}
-  m_AnchoredPosition: {x: -1.8919373, y: 11.979965}
+  m_AnchoredPosition: {x: -1.8919067, y: 11.979965}
   m_SizeDelta: {x: -62.5392, y: -55.4252}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &106230596
