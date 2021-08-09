@@ -58,7 +58,8 @@ public class WaveManagement : MonoBehaviour
                 return false;
             }
         }
-        return true;
+        //return true;
+        return false;
     }
     Vector3 GetPosition()
     {

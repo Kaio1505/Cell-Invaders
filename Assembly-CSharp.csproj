@@ -47,12 +47,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Inimigos\Atirador.cs" />
      <Compile Include="Assets\Scripts\Scenes\Menu.cs" />
      <Compile Include="Assets\Scripts\Scenes\Win.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Itens\ItemVida.cs" />
      <Compile Include="Assets\Scripts\Scenes\GameOver.cs" />
      <Compile Include="Assets\Scripts\Abstracts\AbstractTiro.cs" />
+     <Compile Include="Assets\Scripts\Tiros\TiroInimigo.cs" />
      <Compile Include="Assets\Scripts\Abstracts\AbstractInimigo.cs" />
      <Compile Include="Assets\Scripts\Inimigos\Suicida.cs" />
      <Compile Include="Assets\Scripts\Abstracts\AbstractItem.cs" />

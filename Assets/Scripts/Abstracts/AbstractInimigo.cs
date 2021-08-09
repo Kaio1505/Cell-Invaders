@@ -10,17 +10,20 @@ public abstract class AbstractInimigo : MonoBehaviour
     public int startTime;
     public bool mortoPorTiro;
     public AbstractItem[] itensDrop = new AbstractItem[1];
+    bool valendo = false;
 
     void Start() 
     {
-        rb.simulated = false;
         Invoke("Begin", startTime);
     }
 
     void Update()
     {  
-        Movimento();
-        Atirar();
+        if(valendo)
+        {
+            Movimento();
+            Atirar();
+        }
     }
 
     public virtual void TakeDamage(int dano)
@@ -41,7 +44,8 @@ public abstract class AbstractInimigo : MonoBehaviour
 
     public virtual void Begin()
     {
-        rb.simulated = true;
+        valendo = true;
+        gameObject.GetComponent<Collider2D>().isTrigger = true;
     }
 
     public virtual void Atirar()
