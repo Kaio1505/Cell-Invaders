@@ -26,6 +26,16 @@ public abstract class AbstractInimigo : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter2D(Collider2D collision) 
+    {
+        if(collision.CompareTag("Player"))
+        {
+            player.TakeDamage(dano);
+            mortoPorTiro = false;
+            Destruir();
+        }
+    }
+
     public virtual void TakeDamage(int dano)
     {
         vida -= dano;

@@ -151,7 +151,7 @@ MonoBehaviour:
   rb: {fileID: 571788790533692918}
   player: {fileID: 0}
   startTime: 0
-  mortoPorTiro: 0
+  mortoPorTiro: 1
   itensDrop:
   - {fileID: 0}
   projetilPrefab: {fileID: -5378856843237581399, guid: 7ec78e763da50a047bfa5d0a612697a8, type: 3}

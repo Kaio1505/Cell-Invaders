@@ -34,14 +34,6 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision) 
     {
-        if(collision.CompareTag("Inimigo"))
-        {
-            var inimigo = collision.GetComponent<AbstractInimigo>();
-            vida -= inimigo.dano;
-            inimigo.mortoPorTiro = false;
-            inimigo.Destruir();
-        }
-
         if(vida <= 0)
         {
             Destroy(gameObject);
@@ -51,15 +43,6 @@ public class Player : MonoBehaviour
 
     void Movimento()
     {
-        //movimento usando força
-        // Movimento no eixo X e Y da nave
-        /*x = Input.GetAxis("Horizontal");
-        y = Input.GetAxis("Vertical");
-        Vector3 force = new Vector3(x, y,0);
-        force.Normalize();
-        force *= 1;
-        rb.AddForce(force);*/
-
         //velocidade da nave
         var velocity = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         rb.velocity = velocity*speed;

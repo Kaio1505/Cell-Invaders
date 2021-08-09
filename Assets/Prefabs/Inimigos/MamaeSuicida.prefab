@@ -150,7 +150,7 @@ MonoBehaviour:
   rb: {fileID: 3830322006211369546}
   player: {fileID: 0}
   startTime: 0
-  mortoPorTiro: 0
+  mortoPorTiro: 1
   itensDrop:
   - {fileID: 0}
   filhos: 5
