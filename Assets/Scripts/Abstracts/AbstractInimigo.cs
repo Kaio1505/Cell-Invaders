@@ -18,15 +18,9 @@ public abstract class AbstractInimigo : MonoBehaviour
     }
 
     void Update()
-    {
-        if(player == null)
-        { 
-            Destruir();
-        }
-        else
-        {    
-            Movimento();
-        }
+    {  
+        Movimento();
+        Atirar();
     }
 
     public virtual void TakeDamage(int dano)
@@ -50,6 +44,11 @@ public abstract class AbstractInimigo : MonoBehaviour
         rb.simulated = true;
     }
 
+    public virtual void Atirar()
+    {
+
+    }
+    
     public abstract void Movimento();
     public abstract void DroparItem();
 }

@@ -85,4 +85,9 @@ public class Player : MonoBehaviour
             mousePosition.x - transform.position.x,
             mousePosition.y - transform.position.y);
     }
+
+    public void TakeDamage(int dano)
+    {
+        vida -= dano;
+    }
 }

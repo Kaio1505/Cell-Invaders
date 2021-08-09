@@ -8,7 +8,7 @@ public class Suicida : AbstractInimigo
         velocity.Normalize();
         rb.velocity = velocity*speed;
     }
-
+    
     public override void DroparItem()
     {
         if(mortoPorTiro)

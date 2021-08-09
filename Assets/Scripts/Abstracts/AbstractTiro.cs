@@ -5,19 +5,7 @@ public abstract class AbstractTiro : MonoBehaviour
     public int dano;
     public float speed;
     public Rigidbody2D rb;
-
-    void OnTriggerEnter2D(Collider2D collision) 
-    {
-        if(collision.IsTouchingLayers(3))
-        {
-            if(collision.CompareTag("Inimigo"))
-            {
-                ColliderInimigo(collision);
-            }
-
-            Destruir();
-        }
-    }
+    public Player player;
 
     public virtual void ColliderInimigo(Collider2D collision)
     {

@@ -17,14 +17,15 @@ public class WaveManagement : MonoBehaviour
     IEnumerator Start()
     {
         carregou = 0;
-        //Criando tela de instrução para usuário
+        //Criando tela de instruï¿½ï¿½o para usuï¿½rio
         tela_instrucao = Instantiate(sprite_inimigo, new Vector3(0, 0.4f, 0), Quaternion.identity);
         tela_instrucao.transform.position.Set(0, 0.4f, 0);
         var Texto = Instantiate(PrefabTexto, new Vector3(0, -80, 0), Quaternion.identity);
         Texto.transform.SetParent(Pai.transform, false);
-        Texto.text = "Este inimigo é o seu primeiro desafio, ele irá te seguir até chegar em você, caso encoste você perde uma vida, porém ele é destruido também.\n" +
-            "Atire nele para tentar destruí-lo antes que ele se aproxime.";
-        yield return new WaitForSeconds(6f);
+        Texto.text = "Este inimigo ï¿½ o seu primeiro desafio, ele irï¿½ te seguir atï¿½ chegar em vocï¿½, caso encoste vocï¿½ perde uma vida, porï¿½m ele ï¿½ destruido tambï¿½m.\n" +
+            "Atire nele para tentar destruï¿½-lo antes que ele se aproxime.";
+        //yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(0f);
         Destroy(tela_instrucao);
         Destroy(Texto);
 
