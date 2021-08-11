@@ -10,7 +10,7 @@ public abstract class AbstractInimigo : MonoBehaviour
     public int startTime;
     public bool mortoPorTiro;
     public AbstractItem[] itensDrop = new AbstractItem[1];
-    bool valendo = false;
+    public bool valendo = false;
 
     void Start() 
     {
@@ -24,6 +24,7 @@ public abstract class AbstractInimigo : MonoBehaviour
             Movimento();
             Atirar();
         }
+        UpdateInimigo();
     }
 
     void OnTriggerEnter2D(Collider2D collision) 
@@ -65,6 +66,11 @@ public abstract class AbstractInimigo : MonoBehaviour
     }
 
     public virtual void OnTriggerEnterInimigo(Collider2D collision)
+    {
+
+    }
+
+    public virtual void UpdateInimigo()
     {
 
     }

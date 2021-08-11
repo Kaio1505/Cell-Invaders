@@ -19,7 +19,6 @@ public class Bomba : Suicida
             }
             isEnter = true;
         }
-        OnTriggerEnterInimigo(collision);
     }
 
     void OnTriggerExit2D(Collider2D collision) 

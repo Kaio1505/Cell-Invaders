@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\Inimigos\Suicida.cs" />
      <Compile Include="Assets\Scripts\Abstracts\AbstractItem.cs" />
      <Compile Include="Assets\Scripts\Tiros\TiroBasico.cs" />
+     <Compile Include="Assets\Scripts\Inimigos\Bomba.cs" />
      <Compile Include="Assets\Scripts\WaveManagement.cs" />
      <Compile Include="Assets\Scripts\Inimigos\MamaeSuicida.cs" />
  <Reference Include="UnityEngine">
