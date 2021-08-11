@@ -12,24 +12,15 @@ public abstract class AbstractTiro : MonoBehaviour
         collision.GetComponent<AbstractInimigo>().TakeDamage(dano); 
     }
 
+    void OnBecameInvisible()
+    {
+        Destruir();    
+    }
+
     public virtual void Destruir()
     {
         Destroy(gameObject);
     }
 
-    public virtual void Movimento()
-    {
-        var velocity = DirecaoMouse();
-        velocity.Normalize();
-        rb.velocity = velocity*speed;
-    }
-
-    Vector2 DirecaoMouse()
-    {
-        Vector3 mousePosition = Input.mousePosition;
-        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        return new Vector2(
-            mousePosition.x - transform.position.x,
-            mousePosition.y - transform.position.y);
-    }
+    public abstract void Movimento();
 }

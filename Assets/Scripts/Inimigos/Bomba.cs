@@ -36,6 +36,6 @@ public class Bomba : Suicida
             player.TakeDamage(danoExplosao);
         }
 
-        base.Destruir();
+        Destroy(gameObject);
     }
 }

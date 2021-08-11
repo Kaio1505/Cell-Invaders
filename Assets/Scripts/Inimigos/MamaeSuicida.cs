@@ -1,16 +1,9 @@
 using UnityEngine;
 
-public class MamaeSuicida : AbstractInimigo
+public class MamaeSuicida : Suicida
 {
     public int filhos;
     public AbstractInimigo filhoPrefab;
-
-    public override void Movimento()
-    {
-        var velocity = new Vector2((player.transform.position.x - gameObject.transform.position.x),(player.transform.position.y - gameObject.transform.position.y));
-        velocity.Normalize();
-        rb.velocity = velocity*speed;
-    }
 
     public override void Destruir()
     {
@@ -30,16 +23,5 @@ public class MamaeSuicida : AbstractInimigo
 
         
         base.Destruir();
-    }
-    
-    public override void DroparItem()
-    {
-        if(mortoPorTiro)
-        {
-            if(Random.Range(0, 3) == 1)
-            {
-                var item = Instantiate(itensDrop[0], transform.position, transform.rotation);
-            }
-        }
     }
 }
