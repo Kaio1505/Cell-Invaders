@@ -15,7 +15,7 @@ public class Suicida : AbstractInimigo
         {
             if(Random.Range(0, 3) == 1)
             {
-                var item = Instantiate(itensDrop[0], transform.position, transform.rotation);
+                //var item = Instantiate(itensDrop[0], transform.position, transform.rotation);
             }
         }
     }

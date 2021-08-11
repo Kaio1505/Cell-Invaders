@@ -119,9 +119,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da1ee7a36f2752a4c866a3a21f0e0f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dano: 2
+  dano: 1
   speed: 3
   rb: {fileID: 5520475379393153949}
+  player: {fileID: 0}
 --- !u!58 &2571007784687264318
 CircleCollider2D:
   m_ObjectHideFlags: 0

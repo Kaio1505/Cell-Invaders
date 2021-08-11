@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  vida: 3
+  vida: 5
   max: 5
   rb: {fileID: 3213256667246047586}
   projetilPrefab: {fileID: 4563441177097120725, guid: 8e23888baa63ac643aa048c0d1cffd08, type: 3}

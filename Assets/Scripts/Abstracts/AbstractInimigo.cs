@@ -35,7 +35,6 @@ public abstract class AbstractInimigo : MonoBehaviour
             Destruir();
         }
         OnTriggerEnterInimigo(collision);
-
     }
 
     public virtual void TakeDamage(int dano)
