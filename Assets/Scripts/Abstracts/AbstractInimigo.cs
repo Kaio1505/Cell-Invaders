@@ -34,6 +34,8 @@ public abstract class AbstractInimigo : MonoBehaviour
             mortoPorTiro = false;
             Destruir();
         }
+        OnTriggerEnterInimigo(collision);
+
     }
 
     public virtual void TakeDamage(int dano)
@@ -59,6 +61,11 @@ public abstract class AbstractInimigo : MonoBehaviour
     }
 
     public virtual void Atirar()
+    {
+
+    }
+
+    public virtual void OnTriggerEnterInimigo(Collider2D collision)
     {
 
     }

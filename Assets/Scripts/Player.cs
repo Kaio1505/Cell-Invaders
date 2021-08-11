@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Threading;
+using System.Collections;
 
 public class Player : MonoBehaviour
 {
@@ -11,6 +13,7 @@ public class Player : MonoBehaviour
     public AbstractTiro projetilPrefab;
     public Transform gatilho;
     Text numVidas;
+    float _taxaSpeed;
 
     void Start() 
     {
@@ -72,5 +75,18 @@ public class Player : MonoBehaviour
     public void TakeDamage(int dano)
     {
         vida -= dano;
+    }
+
+    public void TakeDamage(int dano, float taxaSpeed, int tempoDeEfeito)
+    {
+        TakeDamage(dano);
+        speed *= taxaSpeed;
+        _taxaSpeed = taxaSpeed;
+        Invoke("ReturnSpeed", tempoDeEfeito);
+    }
+
+    public void ReturnSpeed()
+    {
+        speed /= _taxaSpeed;
     }
 }
