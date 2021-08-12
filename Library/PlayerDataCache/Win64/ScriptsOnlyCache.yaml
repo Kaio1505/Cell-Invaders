@@ -1,12 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Atirador
     - GameOver
-    - ItemVida
     - Menu
     - Player
-    - Suicida
-    - TiroBasico
+    - TiroCanhao
+    - TiroInimigo
     - WaveManagement
     - Win
     Unity.2D.Animation.Editor.dll:
@@ -72,23 +72,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1456}
     - Class: 114
-      Script: {instanceID: 2314}
+      Script: {instanceID: 1532}
     - Class: 114
-      Script: {instanceID: 2616}
+      Script: {instanceID: 2316}
     - Class: 114
-      Script: {instanceID: 2702}
+      Script: {instanceID: 2618}
     - Class: 114
-      Script: {instanceID: 2780}
+      Script: {instanceID: 2782}
     - Class: 114
-      Script: {instanceID: 2998}
+      Script: {instanceID: 3002}
     - Class: 114
-      Script: {instanceID: 3242}
+      Script: {instanceID: 3014}
     - Class: 114
-      Script: {instanceID: 4654}
+      Script: {instanceID: 3248}
     - Class: 114
-      Script: {instanceID: 4954}
+      Script: {instanceID: 5412}
     - Class: 114
-      Script: {instanceID: 5398}
+      Script: {instanceID: 17540}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -133,15 +133,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1456}
     - Class: 114
-      Script: {instanceID: 2616}
+      Script: {instanceID: 2618}
     - Class: 114
-      Script: {instanceID: 2752}
+      Script: {instanceID: 2754}
     - Class: 114
-      Script: {instanceID: 2780}
+      Script: {instanceID: 2782}
     - Class: 114
-      Script: {instanceID: 2998}
+      Script: {instanceID: 3002}
     - Class: 114
-      Script: {instanceID: 3242}
+      Script: {instanceID: 3248}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -190,15 +190,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1456}
     - Class: 114
-      Script: {instanceID: 1582}
+      Script: {instanceID: 1584}
     - Class: 114
-      Script: {instanceID: 2616}
+      Script: {instanceID: 2618}
     - Class: 114
-      Script: {instanceID: 2780}
+      Script: {instanceID: 2782}
     - Class: 114
-      Script: {instanceID: 2998}
+      Script: {instanceID: 3002}
     - Class: 114
-      Script: {instanceID: 3242}
+      Script: {instanceID: 3248}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -237,15 +237,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1456}
     - Class: 114
-      Script: {instanceID: 1954}
+      Script: {instanceID: 1956}
     - Class: 114
-      Script: {instanceID: 2616}
+      Script: {instanceID: 2618}
     - Class: 114
-      Script: {instanceID: 2780}
+      Script: {instanceID: 2782}
     - Class: 114
-      Script: {instanceID: 2998}
+      Script: {instanceID: 3002}
     - Class: 114
-      Script: {instanceID: 3242}
+      Script: {instanceID: 3248}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -281,6 +281,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: c86fc49c64fa491950de9afc73577fe7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Atirador
   - hash:
       serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
@@ -391,7 +397,7 @@ ScriptsOnlyBuild:
     className: CinemachinePixelPerfect
   - hash:
       serializedVersion: 2
-      Hash: 21bec4f716eb92407054c4f10ec0bc6c
+      Hash: fc345c20f2d603137ddc86c802069148
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -469,6 +475,12 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: 63f0a7c1d9f43e1ce974f1cec5e35560
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TiroDestrutivo
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestRunner.Utils
@@ -479,6 +491,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 6d466137b109ecaa68a1f73a6d929de4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TiroInimigo
   - hash:
       serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
@@ -529,6 +547,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
+      Hash: ac17b41ec77eaa2330ea1ecb9e2a9c2b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Curandeiro
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -563,6 +587,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 520cdf43067fb0276a9b8040ca22d157
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TiroInimigoFrezzer
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -661,6 +691,12 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
+      Hash: 56f2052fdaf06f78da03635b497e338c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TiroTeleguiado
+  - hash:
+      serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -739,7 +775,7 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
-      Hash: 44ee486e86b980053687214edc69b298
+      Hash: bd9339c230c889884ca9a5a7d3140ed6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Suicida
@@ -775,10 +811,16 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: f920b01222869a917be281700f765428
+      Hash: 56f2052fdaf06f78da03635b497e338c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TiroBasico
+  - hash:
+      serializedVersion: 2
+      Hash: dce9d551c6a41aac46a88ae011256297
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bomba
   - hash:
       serializedVersion: 2
       Hash: fd68d84f33fad85aac38f2739c0ee270
@@ -817,6 +859,12 @@ ScriptsOnlyBuild:
     className: ActivationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: fb11ed0b544d25272dbda5560a0f75e8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MamaeSuicida
+  - hash:
+      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -833,6 +881,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: 55c7d0008680fba331d1295a3ff38402
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TiroCanhao
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
