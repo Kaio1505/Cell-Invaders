@@ -54,10 +54,12 @@
      <Compile Include="Assets\Scripts\Itens\ItemVida.cs" />
      <Compile Include="Assets\Scripts\Scenes\GameOver.cs" />
      <Compile Include="Assets\Scripts\Abstracts\AbstractTiro.cs" />
+     <Compile Include="Assets\Scripts\Tiros\TiroDestrutivo.cs" />
      <Compile Include="Assets\Scripts\Tiros\TiroInimigo.cs" />
      <Compile Include="Assets\Scripts\Abstracts\AbstractInimigo.cs" />
      <Compile Include="Assets\Scripts\Inimigos\Curandeiro.cs" />
      <Compile Include="Assets\Scripts\Tiros\TiroInimigoFrezzer.cs" />
+     <Compile Include="Assets\Scripts\Tiros\TiroTeleguiado.cs" />
      <Compile Include="Assets\Scripts\Inimigos\Suicida.cs" />
      <Compile Include="Assets\Scripts\Abstracts\AbstractItem.cs" />
      <Compile Include="Assets\Scripts\Tiros\TiroBasico.cs" />

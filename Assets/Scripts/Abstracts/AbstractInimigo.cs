@@ -24,6 +24,12 @@ public abstract class AbstractInimigo : MonoBehaviour
             Movimento();
             Atirar();
         }
+
+        if(vida <= 0)
+        {
+            Destruir();
+        }
+
         UpdateInimigo();
     }
 
@@ -38,14 +44,16 @@ public abstract class AbstractInimigo : MonoBehaviour
         OnTriggerEnterInimigo(collision);
     }
 
-    public virtual void TakeDamage(int dano)
+    public virtual bool TakeDamage(int dano)
     {
         vida -= dano;
 
         if(vida <= 0)
         {
-            Destruir();
+            return true;
         }
+
+        return false;
     }
 
     public virtual void Destruir()

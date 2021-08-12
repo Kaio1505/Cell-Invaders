@@ -2,12 +2,24 @@ using UnityEngine;
 
 public class TiroBasico : AbstractTiro
 {
+    public bool isFilho = false;
+    public float x;
+    public float y;
 
     public override void Movimento()
     {
-        var velocity = DirecaoMouse();
-        velocity.Normalize();
-        rb.velocity = velocity*speed;
+        if(isFilho)
+        {
+            var velocity = new Vector2(x , y);
+            velocity.Normalize();
+            rb.velocity = velocity*speed;
+        }
+        else
+        {
+            var velocity = DirecaoMouse();
+            velocity.Normalize();
+            rb.velocity = velocity*speed;
+        }
     }
 
     Vector2 DirecaoMouse()

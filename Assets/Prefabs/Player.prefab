@@ -128,7 +128,7 @@ MonoBehaviour:
   vida: 5
   max: 5
   rb: {fileID: 3213256667246047586}
-  projetilPrefab: {fileID: 2689956994573507485, guid: ae8eec0d401f7a1448e337d594ed17f8, type: 3}
+  projetilPrefab: {fileID: 6082599625368441, guid: 4fe2d94f3dcc1d7459ae0bf85b4bfc03, type: 3}
   gatilho: {fileID: 1534224733725018798}
 --- !u!50 &3213256667246047586
 Rigidbody2D:

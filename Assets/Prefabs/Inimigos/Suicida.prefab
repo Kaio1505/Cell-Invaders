@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4c2021b46d06864ea6f82cb98e0b00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 10
+  vida: 2
   dano: 1
   speed: 1
   rb: {fileID: 4586350348647485089}
@@ -132,6 +132,7 @@ MonoBehaviour:
   mortoPorTiro: 1
   itensDrop:
   - {fileID: -705599846814931175, guid: 955bddf7babd3f945af2810dee6357c2, type: 3}
+  valendo: 0
 --- !u!50 &4586350348647485089
 Rigidbody2D:
   serializedVersion: 4
