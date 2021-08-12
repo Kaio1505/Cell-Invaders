@@ -6,7 +6,6 @@ public class TiroCanhao : TiroBasico
 {
     List<AbstractInimigo> inimigos = new List<AbstractInimigo>();
     public int danoExplosao;
-    bool paredeImpact = false;
 
     void OnTriggerEnter2D(Collider2D collision) 
     {

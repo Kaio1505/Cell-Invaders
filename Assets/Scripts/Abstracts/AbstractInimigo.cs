@@ -7,7 +7,7 @@ public abstract class AbstractInimigo : MonoBehaviour
     public float speed;
     public Rigidbody2D rb;
     public Player player;
-    public int startTime;
+    public float startTime;
     public bool mortoPorTiro;
     public AbstractItem[] itensDrop = new AbstractItem[1];
     public bool valendo = false;
