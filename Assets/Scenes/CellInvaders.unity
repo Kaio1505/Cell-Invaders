@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2097a543fb6bd47a12305553c93036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 6589195055672904487, guid: 5ce45bf6cbf34774aae367c859098091, type: 3}
+  playerPrefab: {fileID: 1311640600635965044, guid: 5ce45bf6cbf34774aae367c859098091, type: 3}
   inimigoPrefab: {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
   numeroDeInimigos: 1
   intervaloEntreInimigos: 1

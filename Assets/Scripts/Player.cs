@@ -11,7 +11,10 @@ public class Player : MonoBehaviour
     public int max;
     public Rigidbody2D rb;
     public AbstractTiro projetilPrefab;
-    public Transform gatilho;
+    public Transform gatilhoCentral;
+    public Transform gatilhoDireito;
+    public Transform gatilhoEsquerdo;
+    public bool tiroTriplo;
     Text numVidas;
     float _taxaSpeed;
 
@@ -58,8 +61,16 @@ public class Player : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
-            var tiro = Instantiate(projetilPrefab, gatilho.position, transform.rotation);
+            var tiro = Instantiate(projetilPrefab, gatilhoCentral.position, transform.rotation);
             tiro.Movimento();
+
+            if(tiroTriplo)
+            {
+                tiro = Instantiate(projetilPrefab, gatilhoDireito.position, transform.rotation);
+                tiro.Movimento();
+                tiro = Instantiate(projetilPrefab, gatilhoEsquerdo.position, transform.rotation);
+                tiro.Movimento();
+            }
         }
     }
 
