@@ -33,6 +33,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3988853110476061058, guid: 8e23888baa63ac643aa048c0d1cffd08, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988853110476061058, guid: 8e23888baa63ac643aa048c0d1cffd08, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988853110476061058, guid: 8e23888baa63ac643aa048c0d1cffd08, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.22531801
       objectReference: {fileID: 0}
@@ -75,6 +83,22 @@ PrefabInstance:
     - target: {fileID: 3988853110476061059, guid: 8e23888baa63ac643aa048c0d1cffd08, type: 3}
       propertyPath: m_Name
       value: TiroDestrutivo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988853110476061061, guid: 8e23888baa63ac643aa048c0d1cffd08, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7005121047630679439, guid: 007327c874faca747b026dcdb8fc0ed9, type: 3}
+    - target: {fileID: 3988853110476061061, guid: 8e23888baa63ac643aa048c0d1cffd08, type: 3}
+      propertyPath: m_Color.b
+      value: 0.07186719
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988853110476061061, guid: 8e23888baa63ac643aa048c0d1cffd08, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8018868
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988853110476061061, guid: 8e23888baa63ac643aa048c0d1cffd08, type: 3}
+      propertyPath: m_Color.r
+      value: 0.80138385
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4563441177097120725, guid: 8e23888baa63ac643aa048c0d1cffd08, type: 3}

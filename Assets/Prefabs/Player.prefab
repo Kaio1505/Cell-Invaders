@@ -134,7 +134,7 @@ MonoBehaviour:
   vida: 5
   max: 5
   rb: {fileID: 1311640600635965045}
-  projetilPrefab: {fileID: 4563441177097120725, guid: 8e23888baa63ac643aa048c0d1cffd08, type: 3}
+  projetilPrefab: {fileID: -965225153463177491, guid: e6a328d34e68ea64ea14a676fc641664, type: 3}
   gatilhoCentral: {fileID: 1311640599427856597}
   gatilhoDireito: {fileID: 1311640601328674825}
   gatilhoEsquerdo: {fileID: 1311640601356344904}
