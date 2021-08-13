@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Linq;
 
 public class MamaeSuicida : Suicida
 {
@@ -7,6 +8,7 @@ public class MamaeSuicida : Suicida
 
     public override void Destruir()
     {
+        var wave =  GameObject.FindGameObjectsWithTag("Wave").First().GetComponent<WaveManagement>();
         if(mortoPorTiro)
         {
             for(int i = 0; i < filhos; i++)
@@ -18,6 +20,7 @@ public class MamaeSuicida : Suicida
                 inimigo.GetComponent<Collider2D>().isTrigger = false;
                 inimigo.player = player;
                 inimigo.startTime = i+1;
+                wave.AddInimigosTela(inimigo);
             }
         }
 

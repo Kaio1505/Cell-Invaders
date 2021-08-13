@@ -100,4 +100,9 @@ public class Player : MonoBehaviour
     {
         speed /= _taxaSpeed;
     }
+
+    public void SetActivePlayer(bool value)
+    {
+        gameObject.SetActive(value);
+    }
 }

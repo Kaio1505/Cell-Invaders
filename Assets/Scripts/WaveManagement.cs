@@ -1,69 +1,140 @@
-using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Linq;
+
+[System.Serializable]
+public class InimigosSpawn
+{
+    public AbstractInimigo prefab;
+    public int quantidade;
+    public float intervaloEntreInimigos;
+
+}
+
+[System.Serializable]
+public class Instrucoes 
+{
+    public GameObject spriteInimigo;
+    public Text prefabTexto;
+    public string text;
+    public float tempoDeLeitura;
+}
+
+[System.Serializable]
+public class Wave
+{
+    public float tempoDeEspera;
+    public List<InimigosSpawn> inimigos = new List<InimigosSpawn>();
+    public List<Instrucoes> instrucoes = new List<Instrucoes>();
+}
+
 public class WaveManagement : MonoBehaviour
 {
     public Player playerPrefab;
-    public AbstractInimigo inimigoPrefab;
-    public int numeroDeInimigos;
-    public int intervaloEntreInimigos;
-    public GameObject sprite_inimigo;
-    GameObject tela_instrucao;
-    public Text PrefabTexto;
-    public Canvas Pai;
-    AbstractInimigo[] inimigos_totais;
-    int carregou;
-    IEnumerator Start()
-    {
-        carregou = 0;
-        //Criando tela de instru��o para usu�rio
-        tela_instrucao = Instantiate(sprite_inimigo, new Vector3(0, 0.4f, 0), Quaternion.identity);
-        tela_instrucao.transform.position.Set(0, 0.4f, 0);
-        var Texto = Instantiate(PrefabTexto, new Vector3(0, -80, 0), Quaternion.identity);
-        Texto.transform.SetParent(Pai.transform, false);
-        Texto.text = "Este inimigo � o seu primeiro desafio, ele ir� te seguir at� chegar em voc�, caso encoste voc� perde uma vida, por�m ele � destruido tamb�m.\n" +
-            "Atire nele para tentar destru�-lo antes que ele se aproxime.";
-        //yield return new WaitForSeconds(6f);
-        yield return new WaitForSeconds(0f);
-        Destroy(tela_instrucao);
-        Destroy(Texto);
+    public Canvas pai;
+    public List<Wave> waves = new List<Wave>();
+    public List<AbstractInimigo> inimigosNaTela = new List<AbstractInimigo>();
 
-        //Spawanando inimigos
-        inimigos_totais = new AbstractInimigo[numeroDeInimigos];
-        var player = Instantiate(playerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-        for (int i = 0; i < numeroDeInimigos; i++)
-        {
-            inimigos_totais[i] = Instantiate(inimigoPrefab, GetPosition(), Quaternion.identity);
-            inimigos_totais[i].player = player;
-            inimigos_totais[i].startTime = i * intervaloEntreInimigos;
-        }
-        carregou = 1;
+    bool comecou = false;
+    Player player;
+    int waveAtual = 0;
+
+    void Start()
+    {
+        player = Instantiate(playerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
     }
 
-    
-    private void Update()
+    void Update()
     {
-        if(carregou==1 && isNull(inimigos_totais) )
+        if(!existeInimigos(inimigosNaTela) && !comecou)
         {
-            SceneManager.LoadScene("Winner");
-        }
-    }
-    public bool isNull(AbstractInimigo[] inimigos_totais)
-    {
-        for (int i = 0; i < numeroDeInimigos; i++)
-        {
-            if (inimigos_totais[i] != null)
+            if(waves.Count == waveAtual)
             {
-                return false;
+                StartCoroutine(MudaCena("Winner"));
+            }
+            else
+            {
+                var wave = waves[waveAtual];
+                comecou = true;
+                StartCoroutine(BeginWave());
             }
         }
-        //return true;
+
+        if(player.vida <= 0)
+        {
+            StartCoroutine(MudaCena("GameOver"));
+        }
+    }
+
+    public IEnumerator BeginWave()
+    {
+        var wave = waves[waveAtual];
+        inimigosNaTela = new List<AbstractInimigo>();
+
+        player.SetActivePlayer(false);
+        yield return new WaitForSeconds(wave.tempoDeEspera);
+        foreach(var instrucao in wave.instrucoes)
+        {
+            var telaInstrucao = Instantiate(instrucao.spriteInimigo, new Vector3(0, 0.4f, 0), Quaternion.identity);
+            telaInstrucao.transform.position.Set(0, 0.4f, 0);
+            var Texto = Instantiate(instrucao.prefabTexto, new Vector3(0, -80, 0), Quaternion.identity);
+            Texto.transform.SetParent(pai.transform, false);
+            Texto.text = instrucao.text;
+            yield return new WaitForSeconds(instrucao.tempoDeLeitura);
+            Destroy(telaInstrucao);
+            Destroy(Texto);
+        }
+
+        player.SetActivePlayer(true);
+        foreach(var spaw in wave.inimigos)
+        {
+            for(int i = 0; i < spaw.quantidade; i++)
+            {
+                var inimigo = Instantiate(spaw.prefab, GetPosition(), Quaternion.identity);
+                inimigo.player = player;
+                inimigo.startTime = ( i + 1) * spaw.intervaloEntreInimigos;
+                inimigosNaTela.Add(inimigo);
+            }
+        }
+
+        comecou = false;
+        waveAtual++;
+    }
+
+    public bool existeInimigos(List<AbstractInimigo> inimigosNaTela)
+    {
+        var array = inimigosNaTela.ToArray();
+        var numArray = inimigosNaTela.Count;
+
+        for (int i = 0; i < numArray; i++)
+        {
+            if (array[i] != null)
+            {
+                return true;
+            }
+        }
+
         return false;
     }
+
     Vector3 GetPosition()
     {
         var x = Random.Range(0, 10)%2 == 0 ? 1 : -1;
         return new Vector3(x*Random.Range(1.75f, 2.75f), Random.Range(-2.5f, 2.5f), 0);
     }
+
+    IEnumerator MudaCena(string name)
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(name);
+    }
+
+    public void AddInimigosTela(AbstractInimigo inimigo)
+    {
+        inimigosNaTela.Add(inimigo);
+    }
+
 }
