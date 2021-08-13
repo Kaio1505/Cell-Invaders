@@ -1,19 +1,19 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - Atirador
+    - Bomba
     - GameOver
+    - HUD
     - Menu
     - Player
-    - TiroCanhao
-    - TiroInimigo
+    - TiroBasico
     - WaveManagement
     - Win
+    - explosao
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -59,11 +59,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -72,23 +78,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1456}
     - Class: 114
-      Script: {instanceID: 1532}
+      Script: {instanceID: 2380}
     - Class: 114
-      Script: {instanceID: 2316}
+      Script: {instanceID: 2682}
     - Class: 114
-      Script: {instanceID: 2618}
+      Script: {instanceID: 2846}
     - Class: 114
-      Script: {instanceID: 2782}
+      Script: {instanceID: 3066}
     - Class: 114
-      Script: {instanceID: 3002}
+      Script: {instanceID: 3314}
     - Class: 114
-      Script: {instanceID: 3014}
+      Script: {instanceID: 5032}
     - Class: 114
-      Script: {instanceID: 3248}
+      Script: {instanceID: 5108}
     - Class: 114
-      Script: {instanceID: 5412}
+      Script: {instanceID: 5212}
     - Class: 114
-      Script: {instanceID: 17540}
+      Script: {instanceID: 5478}
+    - Class: 114
+      Script: {instanceID: 23264}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -133,15 +141,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1456}
     - Class: 114
-      Script: {instanceID: 2618}
+      Script: {instanceID: 2682}
     - Class: 114
-      Script: {instanceID: 2754}
+      Script: {instanceID: 2818}
     - Class: 114
-      Script: {instanceID: 2782}
+      Script: {instanceID: 2846}
     - Class: 114
-      Script: {instanceID: 3002}
+      Script: {instanceID: 3066}
     - Class: 114
-      Script: {instanceID: 3248}
+      Script: {instanceID: 3314}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -190,15 +198,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1456}
     - Class: 114
-      Script: {instanceID: 1584}
+      Script: {instanceID: 1648}
     - Class: 114
-      Script: {instanceID: 2618}
+      Script: {instanceID: 2682}
     - Class: 114
-      Script: {instanceID: 2782}
+      Script: {instanceID: 2846}
     - Class: 114
-      Script: {instanceID: 3002}
+      Script: {instanceID: 3066}
     - Class: 114
-      Script: {instanceID: 3248}
+      Script: {instanceID: 3314}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -237,15 +245,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1456}
     - Class: 114
-      Script: {instanceID: 1956}
+      Script: {instanceID: 2020}
     - Class: 114
-      Script: {instanceID: 2618}
+      Script: {instanceID: 2682}
     - Class: 114
-      Script: {instanceID: 2782}
+      Script: {instanceID: 2846}
     - Class: 114
-      Script: {instanceID: 3002}
+      Script: {instanceID: 3066}
     - Class: 114
-      Script: {instanceID: 3248}
+      Script: {instanceID: 3314}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -283,7 +291,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: c86fc49c64fa491950de9afc73577fe7
+      Hash: ce4f18ba5c75e233b0720838055d1830
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Atirador
@@ -529,6 +537,12 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
+      Hash: 55c7d0008680fba331d1295a3ff38402
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TiroCanhao
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -547,7 +561,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: ac17b41ec77eaa2330ea1ecb9e2a9c2b
+      Hash: a2dc4a9517982f5ae027dde71c8ff320
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Curandeiro
@@ -775,7 +789,7 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
-      Hash: bd9339c230c889884ca9a5a7d3140ed6
+      Hash: ec34076c59ab0a62a1b4c728c3f355a7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Suicida
@@ -817,7 +831,7 @@ ScriptsOnlyBuild:
     className: TiroBasico
   - hash:
       serializedVersion: 2
-      Hash: dce9d551c6a41aac46a88ae011256297
+      Hash: f1093f761c05ad80ed24a7fe218805e1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Bomba
@@ -835,16 +849,22 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 551f5735c1053d5eefa6b25abe96dd4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WaveManagement
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
     className: BufferManager
   - hash:
       serializedVersion: 2
-      Hash: 7e4b08d7ff0917e422af24261c277556
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: WaveManagement
+    className: explosao
   - hash:
       serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
@@ -859,7 +879,7 @@ ScriptsOnlyBuild:
     className: ActivationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: fb11ed0b544d25272dbda5560a0f75e8
+      Hash: cc55b2079cd0576d8b0b7e46450d431b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MamaeSuicida
@@ -883,10 +903,10 @@ ScriptsOnlyBuild:
     className: FabrikSolver2D
   - hash:
       serializedVersion: 2
-      Hash: 55c7d0008680fba331d1295a3ff38402
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: TiroCanhao
+    className: HUD
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity

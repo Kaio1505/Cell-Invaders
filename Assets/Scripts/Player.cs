@@ -1,6 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 using System.Threading;
 using System.Collections;
 
@@ -15,13 +13,6 @@ public class Player : MonoBehaviour
     public Transform gatilhoDireito;
     public Transform gatilhoEsquerdo;
     public bool tiroTriplo;
-    Text numVidas;
-    float _taxaSpeed;
-
-    void Start() 
-    {
-        numVidas = GameObject.Find("NumVidas").GetComponent<Text>();
-    }
 
     void Update() 
     {
@@ -31,20 +22,6 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         Movimento();
-    }
-
-    void LateUpdate() 
-    {
-        numVidas.text = $"{vida}";
-    }
-
-    void OnTriggerEnter2D(Collider2D collision) 
-    {
-        if(vida <= 0)
-        {
-            Destroy(gameObject);
-            SceneManager.LoadScene("GameOver");
-        }
     }
 
     void Movimento()
@@ -92,13 +69,13 @@ public class Player : MonoBehaviour
     {
         TakeDamage(dano);
         speed *= taxaSpeed;
-        _taxaSpeed = taxaSpeed;
-        Invoke("ReturnSpeed", tempoDeEfeito);
+        StartCoroutine(ReturnSpeed(taxaSpeed, tempoDeEfeito));
     }
 
-    public void ReturnSpeed()
+    public IEnumerator ReturnSpeed(float taxaSpeed, float tempoDeEfeito)
     {
-        speed /= _taxaSpeed;
+        yield return new WaitForSeconds(tempoDeEfeito);
+        speed /= taxaSpeed;
     }
 
     public void SetActivePlayer(bool value)
