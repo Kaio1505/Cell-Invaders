@@ -144,7 +144,9 @@ MonoBehaviour:
   mortoPorTiro: 1
   itensDrop:
   - {fileID: 0}
-  danoExplosao: 1
+  valendo: 0
+  danoExplosao: 2
+  explosao: {fileID: 4843364846958308329, guid: 907cdabead560f14a814678f46686ebc, type: 3}
 --- !u!1 &8394139350197161258
 GameObject:
   m_ObjectHideFlags: 0

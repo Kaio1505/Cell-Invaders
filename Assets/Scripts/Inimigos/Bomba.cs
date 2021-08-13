@@ -6,7 +6,7 @@ public class Bomba : Suicida
 {
     public int danoExplosao;
     bool isEnter = false;
-
+    public GameObject explosao;
     void OnTriggerEnter2D(Collider2D collision) 
     {
         if(collision.CompareTag("Player"))
@@ -35,7 +35,8 @@ public class Bomba : Suicida
         {
             player.TakeDamage(danoExplosao);
         }
-
+        Instantiate(explosao, gameObject.transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
+
 }
