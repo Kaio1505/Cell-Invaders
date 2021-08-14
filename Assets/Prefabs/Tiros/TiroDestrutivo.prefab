@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aad8b5933301d146843c8d80cebeebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dano: 1
+  dano: 3
   speed: 2
   rb: {fileID: 6841908491524053980}
   player: {fileID: 0}

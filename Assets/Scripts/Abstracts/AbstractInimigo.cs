@@ -11,7 +11,7 @@ public abstract class AbstractInimigo : MonoBehaviour
     public bool mortoPorTiro;
     public AbstractItem[] itensDrop = new AbstractItem[1];
     public bool valendo = false;
-
+    public int num_drops;
     void Start() 
     {
         Invoke("Begin", startTime);

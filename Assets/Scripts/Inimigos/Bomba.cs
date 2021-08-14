@@ -46,7 +46,7 @@ public class Bomba : Suicida
             if (Random.Range(0, 3) == 1)
             {
                 Debug.Log("dropar item");
-                var item = Instantiate(itensDrop[Random.Range(0, itensDrop.Length)], transform.position, transform.rotation);
+                var item = Instantiate(itensDrop[Random.Range(0, num_drops)], transform.position, transform.rotation);
             }
         }
     }

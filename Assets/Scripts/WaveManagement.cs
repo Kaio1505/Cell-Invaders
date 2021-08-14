@@ -29,6 +29,7 @@ public class Wave
     public float tempoDeEspera;
     public List<InimigosSpawn> inimigos = new List<InimigosSpawn>();
     public List<Instrucoes> instrucoes = new List<Instrucoes>();
+    public int waveItens;
 }
 
 public class WaveManagement : MonoBehaviour
@@ -105,6 +106,7 @@ public class WaveManagement : MonoBehaviour
             {
                 var inimigo = Instantiate(spaw.prefab, GetPosition(), Quaternion.identity);
                 inimigo.player = player;
+                inimigo.num_drops = wave.waveItens;
                 inimigo.startTime = ( i + 1) * spaw.intervaloEntreInimigos;
                 inimigosNaTela.Add(inimigo);
             }

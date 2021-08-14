@@ -232,14 +232,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15ad14c46866a5a4d8b3804ac831a920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dano: 0
+  dano: 2
   speed: 2
   rb: {fileID: 1207293808886610277}
   player: {fileID: 0}
   isFilho: 0
   x: 0
   y: 0
-  danoExplosao: 10
+  danoExplosao: 1
 --- !u!1 &7842348377519109315
 GameObject:
   m_ObjectHideFlags: 0

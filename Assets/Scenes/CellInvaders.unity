@@ -154,7 +154,335 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 1311640600635965044, guid: 5ce45bf6cbf34774aae367c859098091, type: 3}
   pai: {fileID: 2019433586}
-  waves: []
+  waves:
+  - tempoDeEspera: 3
+    inimigos:
+    - prefab: {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
+      quantidade: 5
+      intervaloEntreInimigos: 3
+    instrucoes:
+    - spriteInimigo: {fileID: 6243755456774039268, guid: ebd03c4cd972b1242990ce6676201b7e, type: 3}
+      prefabTexto: {fileID: 7738235652900632572, guid: 95c0951a0405c7d48ba3e413d7b8991e, type: 3}
+      text: "Est\xE9 inimigo ir\xE1 te perseguir, n\xE3o deixe ele te encoste, tente
+        atirar nele"
+      tempoDeLeitura: 4
+    - spriteInimigo: {fileID: 6552595207216747916, guid: ae32e04ec93bea048be41bf0ec848c44, type: 3}
+      prefabTexto: {fileID: 7738235652900632572, guid: 95c0951a0405c7d48ba3e413d7b8991e, type: 3}
+      text: "Ap\xF3s matar os inimigos, alguns poder\xE3o dropar vidas, tente peg\xE1-las
+        para aumentar sua vida."
+      tempoDeLeitura: 4
+    waveItens: 1
+  - tempoDeEspera: 2
+    inimigos:
+    - prefab: {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
+      quantidade: 5
+      intervaloEntreInimigos: 2
+    - prefab: {fileID: 7798972008874040186, guid: 4816d6d4341916242af1f5de9f0634a1, type: 3}
+      quantidade: 3
+      intervaloEntreInimigos: 5
+    instrucoes:
+    - spriteInimigo: {fileID: 2858613963902836470, guid: 15fe5c36f5172b4459c2be39aab2dd0b, type: 3}
+      prefabTexto: {fileID: 7738235652900632572, guid: 95c0951a0405c7d48ba3e413d7b8991e, type: 3}
+      text: "Esse inimigo anda at\xE9 um determinado momento depois de aparecer na
+        tela e para e atira, ele pode ser morto por tiro ou por colis\xE3o, causando
+        dano ao inimigo. "
+      tempoDeLeitura: 4
+    waveItens: 1
+  - tempoDeEspera: 2
+    inimigos:
+    - prefab: {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
+      quantidade: 2
+      intervaloEntreInimigos: 2
+    - prefab: {fileID: 7798972008874040186, guid: 4816d6d4341916242af1f5de9f0634a1, type: 3}
+      quantidade: 5
+      intervaloEntreInimigos: 5
+    instrucoes:
+    - spriteInimigo: {fileID: 931907151931641449, guid: aba115b45ce937f4bb1970397535599d, type: 3}
+      prefabTexto: {fileID: 7738235652900632572, guid: 95c0951a0405c7d48ba3e413d7b8991e, type: 3}
+      text: "Item que permitir\xE1 que o player ganhe uma nova vida, ao peg\xE1-lo
+        o player recupera toda a vida e ainda \xE9 acrescentado mais um de vida ao
+        total. "
+      tempoDeLeitura: 4
+    waveItens: 2
+  - tempoDeEspera: 2
+    inimigos:
+    - prefab: {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
+      quantidade: 3
+      intervaloEntreInimigos: 3
+    - prefab: {fileID: 7798972008874040186, guid: 4816d6d4341916242af1f5de9f0634a1, type: 3}
+      quantidade: 3
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 864736754894903610, guid: dbcab9a13c7ef3248a14910e2443cf6f, type: 3}
+      quantidade: 2
+      intervaloEntreInimigos: 4
+    instrucoes:
+    - spriteInimigo: {fileID: 6702062006307304763, guid: 8490e777043bfdf4992d62eb5775e96f, type: 3}
+      prefabTexto: {fileID: 7738235652900632572, guid: 95c0951a0405c7d48ba3e413d7b8991e, type: 3}
+      text: "Este inimigo possui um comportamento similar ao atirador, sendo assim
+        ao aparecer na tela ir\xE1 ficar parado e atirando de longe, caso ele acerte
+        o player ele ir\xE1 reduzir a velocidade do mesmo, causando uma lentid\xE3o
+        que ir\xE1 atrapalhar o player se movimentar, por alguns segundos. "
+      tempoDeLeitura: 4
+    waveItens: 2
+  - tempoDeEspera: 2
+    inimigos:
+    - prefab: {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
+      quantidade: 4
+      intervaloEntreInimigos: 3
+    - prefab: {fileID: 7798972008874040186, guid: 4816d6d4341916242af1f5de9f0634a1, type: 3}
+      quantidade: 4
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 864736754894903610, guid: dbcab9a13c7ef3248a14910e2443cf6f, type: 3}
+      quantidade: 2
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 4041645990782010313, guid: 7433a0d6c7d3e64489955cb816fb28ee, type: 3}
+      quantidade: 2
+      intervaloEntreInimigos: 4
+    instrucoes:
+    - spriteInimigo: {fileID: 7403067923124393315, guid: 8ad8b1a24791a9b41964c1145e83d4b5, type: 3}
+      prefabTexto: {fileID: 7738235652900632572, guid: 95c0951a0405c7d48ba3e413d7b8991e, type: 3}
+      text: "Este inimigo n\xE3o ir\xE1 te atingir, ele apenas ir\xE1 curar os inimigos,
+        mate-o. Ele \xE9 um pouco resistente."
+      tempoDeLeitura: 4
+    waveItens: 2
+  - tempoDeEspera: 2
+    inimigos:
+    - prefab: {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
+      quantidade: 5
+      intervaloEntreInimigos: 3
+    - prefab: {fileID: 7798972008874040186, guid: 4816d6d4341916242af1f5de9f0634a1, type: 3}
+      quantidade: 5
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 864736754894903610, guid: dbcab9a13c7ef3248a14910e2443cf6f, type: 3}
+      quantidade: 2
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 4041645990782010313, guid: 7433a0d6c7d3e64489955cb816fb28ee, type: 3}
+      quantidade: 2
+      intervaloEntreInimigos: 4
+    instrucoes:
+    - spriteInimigo: {fileID: 1310393887911457191, guid: 25aaaf4b997b9a14db7678721bea90ba, type: 3}
+      prefabTexto: {fileID: 7738235652900632572, guid: 95c0951a0405c7d48ba3e413d7b8991e, type: 3}
+      text: "A partir de agora voc\xEA pode dropar este tiro dos inimigos, ele \xE9
+        um upgrade temporario que permite que seus tiros sigam o inimigo."
+      tempoDeLeitura: 4
+    waveItens: 3
+  - tempoDeEspera: 2
+    inimigos:
+    - prefab: {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
+      quantidade: 3
+      intervaloEntreInimigos: 3
+    - prefab: {fileID: 7798972008874040186, guid: 4816d6d4341916242af1f5de9f0634a1, type: 3}
+      quantidade: 3
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 864736754894903610, guid: dbcab9a13c7ef3248a14910e2443cf6f, type: 3}
+      quantidade: 1
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 8469438610790035147, guid: a038430ade5a06c46a44563bda331e4e, type: 3}
+      quantidade: 1
+      intervaloEntreInimigos: 8
+    instrucoes:
+    - spriteInimigo: {fileID: 3851484547804169627, guid: 74408f3f6e74ceb429ccfb92a1129b97, type: 3}
+      prefabTexto: {fileID: 7738235652900632572, guid: 95c0951a0405c7d48ba3e413d7b8991e, type: 3}
+      text: "Esse inimigo se assemelha muito ao suicida, por\xE9m ao ser morto por
+        tiro ele ir\xE1 liberar v\xE1rios filhos menores que s\xE3o os suicidas que
+        ser\xE3o espalhados por todas as dire\xE7\xF5es, caso voc\xEA colida com
+        ela ir\xE1 tomar dano, por\xE9m ela n\xE3o ir\xE1 liberar filhos. "
+      tempoDeLeitura: 4
+    waveItens: 3
+  - tempoDeEspera: 2
+    inimigos:
+    - prefab: {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
+      quantidade: 4
+      intervaloEntreInimigos: 3
+    - prefab: {fileID: 7798972008874040186, guid: 4816d6d4341916242af1f5de9f0634a1, type: 3}
+      quantidade: 4
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 864736754894903610, guid: dbcab9a13c7ef3248a14910e2443cf6f, type: 3}
+      quantidade: 2
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 8469438610790035147, guid: a038430ade5a06c46a44563bda331e4e, type: 3}
+      quantidade: 0
+      intervaloEntreInimigos: 4
+    instrucoes:
+    - spriteInimigo: {fileID: 946442366825727057, guid: 485d7d73556b91c4897ac828ef8ca550, type: 3}
+      prefabTexto: {fileID: 7738235652900632572, guid: 95c0951a0405c7d48ba3e413d7b8991e, type: 3}
+      text: Opa, agora os inimigos quando mortos podem te garantir que seus buffs
+        durem mais tempo.
+      tempoDeLeitura: 4
+    waveItens: 4
+  - tempoDeEspera: 2
+    inimigos:
+    - prefab: {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
+      quantidade: 3
+      intervaloEntreInimigos: 3
+    - prefab: {fileID: 7798972008874040186, guid: 4816d6d4341916242af1f5de9f0634a1, type: 3}
+      quantidade: 3
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 864736754894903610, guid: dbcab9a13c7ef3248a14910e2443cf6f, type: 3}
+      quantidade: 2
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: -2678673601068466208, guid: 1cfec669ab249a342a41dcd3ab437899, type: 3}
+      quantidade: 2
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 4041645990782010313, guid: 7433a0d6c7d3e64489955cb816fb28ee, type: 3}
+      quantidade: 1
+      intervaloEntreInimigos: 4
+    instrucoes:
+    - spriteInimigo: {fileID: 5905781904571648601, guid: e8e31ee075c1d264792a792d2c94c8db, type: 3}
+      prefabTexto: {fileID: 7738235652900632572, guid: 95c0951a0405c7d48ba3e413d7b8991e, type: 3}
+      text: "Tome cuidado, agora seus inimigos explodem, veja o raio de explos\xE3o
+        da bomba e mate-a enquanto voc\xEA estiver fora do seu raio."
+      tempoDeLeitura: 4
+    waveItens: 4
+  - tempoDeEspera: 2
+    inimigos:
+    - prefab: {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
+      quantidade: 3
+      intervaloEntreInimigos: 3
+    - prefab: {fileID: 7798972008874040186, guid: 4816d6d4341916242af1f5de9f0634a1, type: 3}
+      quantidade: 3
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 864736754894903610, guid: dbcab9a13c7ef3248a14910e2443cf6f, type: 3}
+      quantidade: 2
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: -2678673601068466208, guid: 1cfec669ab249a342a41dcd3ab437899, type: 3}
+      quantidade: 2
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 4041645990782010313, guid: 7433a0d6c7d3e64489955cb816fb28ee, type: 3}
+      quantidade: 1
+      intervaloEntreInimigos: 4
+    instrucoes:
+    - spriteInimigo: {fileID: 5365281062386391021, guid: 71d8aa6dd0e208643b50d00f7bdb08e8, type: 3}
+      prefabTexto: {fileID: 7738235652900632572, guid: 95c0951a0405c7d48ba3e413d7b8991e, type: 3}
+      text: "Um Upgrade novo! Caso voc\xEA consiga peg\xE1-lo uma nave amiga ir\xE1
+        surgir para te ajudar por um per\xEDodo."
+      tempoDeLeitura: 4
+    waveItens: 5
+  - tempoDeEspera: 2
+    inimigos:
+    - prefab: {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
+      quantidade: 2
+      intervaloEntreInimigos: 3
+    - prefab: {fileID: 7798972008874040186, guid: 4816d6d4341916242af1f5de9f0634a1, type: 3}
+      quantidade: 2
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 864736754894903610, guid: dbcab9a13c7ef3248a14910e2443cf6f, type: 3}
+      quantidade: 1
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: -2678673601068466208, guid: 1cfec669ab249a342a41dcd3ab437899, type: 3}
+      quantidade: 2
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 4041645990782010313, guid: 7433a0d6c7d3e64489955cb816fb28ee, type: 3}
+      quantidade: 1
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 8469438610790035147, guid: a038430ade5a06c46a44563bda331e4e, type: 3}
+      quantidade: 1
+      intervaloEntreInimigos: 4
+    instrucoes:
+    - spriteInimigo: {fileID: 4661491511501743348, guid: 6697ff61f463434448108baf12103b53, type: 3}
+      prefabTexto: {fileID: 7738235652900632572, guid: 95c0951a0405c7d48ba3e413d7b8991e, type: 3}
+      text: "Tiro Destrutivo, caso voc\xEA consiga peg\xE1-lo experimente atirar
+        nos inimigos que tenham outros atr\xE1s dele."
+      tempoDeLeitura: 4
+    waveItens: 6
+  - tempoDeEspera: 2
+    inimigos:
+    - prefab: {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
+      quantidade: 5
+      intervaloEntreInimigos: 3
+    - prefab: {fileID: 7798972008874040186, guid: 4816d6d4341916242af1f5de9f0634a1, type: 3}
+      quantidade: 4
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 864736754894903610, guid: dbcab9a13c7ef3248a14910e2443cf6f, type: 3}
+      quantidade: 1
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: -2678673601068466208, guid: 1cfec669ab249a342a41dcd3ab437899, type: 3}
+      quantidade: 3
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 4041645990782010313, guid: 7433a0d6c7d3e64489955cb816fb28ee, type: 3}
+      quantidade: 1
+      intervaloEntreInimigos: 4
+    instrucoes:
+    - spriteInimigo: {fileID: 4065342577773624858, guid: d688b1ea0bfc2ed4db2dfe07130448aa, type: 3}
+      prefabTexto: {fileID: 7738235652900632572, guid: 95c0951a0405c7d48ba3e413d7b8991e, type: 3}
+      text: "Opa! Este \xE9 o tiro triplo, se voc\xEA estava cansado de ouvir esse
+        barulinho de tiro uma vez, agora temos 3."
+      tempoDeLeitura: 4
+    waveItens: 7
+  - tempoDeEspera: 2
+    inimigos:
+    - prefab: {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
+      quantidade: 3
+      intervaloEntreInimigos: 3
+    - prefab: {fileID: 7798972008874040186, guid: 4816d6d4341916242af1f5de9f0634a1, type: 3}
+      quantidade: 2
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 8469438610790035147, guid: a038430ade5a06c46a44563bda331e4e, type: 3}
+      quantidade: 2
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: -2678673601068466208, guid: 1cfec669ab249a342a41dcd3ab437899, type: 3}
+      quantidade: 0
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 4041645990782010313, guid: 7433a0d6c7d3e64489955cb816fb28ee, type: 3}
+      quantidade: 1
+      intervaloEntreInimigos: 4
+    instrucoes:
+    - spriteInimigo: {fileID: 854946647090503618, guid: 54ba8ce830f9f484aa360fa2cd9f5459, type: 3}
+      prefabTexto: {fileID: 7738235652900632572, guid: 95c0951a0405c7d48ba3e413d7b8991e, type: 3}
+      text: "A\xED sim! Esta \xE9 uma barreira protetora, ela ir\xE1 ficar por algum
+        tempo, ent\xE3o caso voc\xEA consiga pega-la experimente jogar-se em cima
+        de uns inimigos."
+      tempoDeLeitura: 4
+    waveItens: 8
+  - tempoDeEspera: 2
+    inimigos:
+    - prefab: {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
+      quantidade: 4
+      intervaloEntreInimigos: 3
+    - prefab: {fileID: 7798972008874040186, guid: 4816d6d4341916242af1f5de9f0634a1, type: 3}
+      quantidade: 1
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 8469438610790035147, guid: a038430ade5a06c46a44563bda331e4e, type: 3}
+      quantidade: 1
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: -2678673601068466208, guid: 1cfec669ab249a342a41dcd3ab437899, type: 3}
+      quantidade: 2
+      intervaloEntreInimigos: 4
+    - prefab: {fileID: 4041645990782010313, guid: 7433a0d6c7d3e64489955cb816fb28ee, type: 3}
+      quantidade: 2
+      intervaloEntreInimigos: 4
+    instrucoes:
+    - spriteInimigo: {fileID: 5952803973033879101, guid: a4d12b395c375c648a0f714eeaaad758, type: 3}
+      prefabTexto: {fileID: 7738235652900632572, guid: 95c0951a0405c7d48ba3e413d7b8991e, type: 3}
+      text: "Salve! Este item com formato \xE9 exatamente o que sugere, ele ir\xE1
+        aumentar o seu dano por um per\xEDodo determinado."
+      tempoDeLeitura: 4
+    waveItens: 9
+  - tempoDeEspera: 2
+    inimigos:
+    - prefab: {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
+      quantidade: 4
+      intervaloEntreInimigos: 3
+    - prefab: {fileID: 7798972008874040186, guid: 4816d6d4341916242af1f5de9f0634a1, type: 3}
+      quantidade: 3
+      intervaloEntreInimigos: 5
+    - prefab: {fileID: 8469438610790035147, guid: a038430ade5a06c46a44563bda331e4e, type: 3}
+      quantidade: 2
+      intervaloEntreInimigos: 5
+    - prefab: {fileID: -2678673601068466208, guid: 1cfec669ab249a342a41dcd3ab437899, type: 3}
+      quantidade: 3
+      intervaloEntreInimigos: 5
+    - prefab: {fileID: 4041645990782010313, guid: 7433a0d6c7d3e64489955cb816fb28ee, type: 3}
+      quantidade: 2
+      intervaloEntreInimigos: 4
+    instrucoes:
+    - spriteInimigo: {fileID: 4826289389166227593, guid: 6268820049a691d4c8195872cae6022a, type: 3}
+      prefabTexto: {fileID: 7738235652900632572, guid: 95c0951a0405c7d48ba3e413d7b8991e, type: 3}
+      text: "\xC9 cara! Este \xE9 o seu ultimo tipo de upgrade, este canh\xE3o \xE9
+        um pouco apel\xE3o, caso voc\xEA o consiga, por alguns segundos voc\xEA poder\xE1
+        atingir vari\xF3s inimigos no raio de explos\xE3o do disparo."
+      tempoDeLeitura: 4
+    waveItens: 10
   inimigosNaTela: []
   bossPrefab: {fileID: -7255886582445830711, guid: 4609188d9ecda1f4daeafae43cbb1579, type: 3}
 --- !u!4 &35261759

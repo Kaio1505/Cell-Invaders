@@ -1,19 +1,32 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Atirador
     - Bomba
     - Boss
+    - Cura
+    - Curandeiro
     - GameOver
     - HUD
     - ItemDano
+    - ItemEscudo
+    - ItemNaveAmiga
+    - ItemTempoPlus
+    - ItemTiro
+    - ItemTiroTriplo
     - ItemVida
+    - ItemVidaPlus
     - MamaeSuicida
     - Menu
     - Player
     - Suicida
     - TiroBasico
     - TiroBoss
+    - TiroCanhao
+    - TiroDestrutivo
     - TiroInimigo
+    - TiroInimigoFrezzer
+    - TiroTeleguiado
     - WaveManagement
     - Win
     - explosao
@@ -86,6 +99,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1456}
     - Class: 114
+      Script: {instanceID: 1532}
+    - Class: 114
       Script: {instanceID: 1592}
     - Class: 114
       Script: {instanceID: 2318}
@@ -98,13 +113,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2790}
     - Class: 114
+      Script: {instanceID: 2858}
+    - Class: 114
+      Script: {instanceID: 2860}
+    - Class: 114
       Script: {instanceID: 3008}
     - Class: 114
       Script: {instanceID: 3020}
     - Class: 114
+      Script: {instanceID: 3120}
+    - Class: 114
+      Script: {instanceID: 3140}
+    - Class: 114
       Script: {instanceID: 3258}
     - Class: 114
+      Script: {instanceID: 3282}
+    - Class: 114
+      Script: {instanceID: 3568}
+    - Class: 114
+      Script: {instanceID: 3634}
+    - Class: 114
+      Script: {instanceID: 3816}
+    - Class: 114
+      Script: {instanceID: 4184}
+    - Class: 114
       Script: {instanceID: 4352}
+    - Class: 114
+      Script: {instanceID: 4476}
     - Class: 114
       Script: {instanceID: 4684}
     - Class: 114
@@ -118,7 +153,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5432}
     - Class: 114
+      Script: {instanceID: 5452}
+    - Class: 114
       Script: {instanceID: 5536}
+    - Class: 114
+      Script: {instanceID: 5580}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -313,7 +352,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 917de1db5775423c2870b502d796a526
+      Hash: 706d42b68c206364ff0fb5873db7c0ec
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Atirador
@@ -607,7 +646,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: f02539611a787d749bc6530951ee257b
+      Hash: 28e09a871a67eb24afa5c6e6c30c39ee
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Curandeiro
@@ -787,7 +826,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: a79365925d2b4279ce1bf30ebc7b9cae
+      Hash: 0e46db62fe52a466dc3b0d061943b117
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Boss
@@ -859,7 +898,7 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
-      Hash: ec34076c59ab0a62a1b4c728c3f355a7
+      Hash: 2753035be8cab6fc2329e97bf79c396b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Suicida
@@ -901,7 +940,7 @@ ScriptsOnlyBuild:
     className: TiroBasico
   - hash:
       serializedVersion: 2
-      Hash: f1093f761c05ad80ed24a7fe218805e1
+      Hash: 01b9db4cad4d27deff34108bce53a37d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Bomba
@@ -925,7 +964,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: f9ba5b5a4a5196492dbb2d3ce7ea08e9
+      Hash: 1e006c253bd4ade8ad03ea295d77d248
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WaveManagement
@@ -961,7 +1000,7 @@ ScriptsOnlyBuild:
     className: ActivationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: cc55b2079cd0576d8b0b7e46450d431b
+      Hash: 47a3f8b86e8c99a63531a917c5497c1e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MamaeSuicida
@@ -995,4 +1034,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/CellInvaders.unity
   - Assets/Scenes/GameOver.unity
   - Assets/Scenes/Winner.unity
-  playerPath: C:/Users/User/Documents/GitHub/Cell-Invaders/Builds/Cell_invaders.exe
+  playerPath: C:/Users/Kaio Vinicius/Desktop/teste/Cell-Invaders/Builds/Cell_invaders.exe

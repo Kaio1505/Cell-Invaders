@@ -108,7 +108,7 @@ public class Player : MonoBehaviour
         Invoke("ResetProps", tempoDeEfeito);
     }
 
-    void ResetProps()
+    public void ResetProps()
     {
         if(NaveAmiga)   Destroy(gameObject);
 

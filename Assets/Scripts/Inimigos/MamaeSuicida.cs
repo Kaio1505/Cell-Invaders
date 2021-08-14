@@ -27,4 +27,15 @@ public class MamaeSuicida : Suicida
         
         base.Destruir();
     }
+    public override void DroparItem()
+    {
+        if (mortoPorTiro)
+        {
+            if (Random.Range(0, 3) == 1)
+            {
+                Debug.Log("dropar item");
+                var item = Instantiate(itensDrop[Random.Range(0, num_drops)], transform.position, transform.rotation);
+            }
+        }
+    }
 }

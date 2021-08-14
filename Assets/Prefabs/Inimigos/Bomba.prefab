@@ -135,18 +135,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 118aeab666b7e63409765554894f98e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 3
-  dano: 2
+  vida: 5
+  dano: 5
   speed: 0.25
   rb: {fileID: 3749775308630015746}
   player: {fileID: 0}
   startTime: 0
   mortoPorTiro: 1
   itensDrop:
-  - {fileID: 7009151094761440485, guid: bc13aef5358fe4e46a39735cd3dd7a36, type: 3}
   - {fileID: -705599846814931175, guid: 955bddf7babd3f945af2810dee6357c2, type: 3}
+  - {fileID: -6966545645026396795, guid: 074ac6fb61f1e4b4eb4ac310798d9633, type: 3}
+  - {fileID: 8840191811729224329, guid: 13054ef609cb31346bbfd497c0e76047, type: 3}
+  - {fileID: 1238448562096654319, guid: ab0c89f1fb5f1f2418a3ce70db280417, type: 3}
+  - {fileID: -8000641738332936454, guid: 71c8d19b1ace8c146af841fc5a15dde9, type: 3}
+  - {fileID: 5187116487283842282, guid: 8fe6dae13b443674da6d3bd587d81e00, type: 3}
+  - {fileID: 5182957375797421359, guid: b266a2beb5ddac1478cf724f0ee6c5b4, type: 3}
+  - {fileID: 3615047155423475502, guid: 145a6e7ee39adcc47bf5718c68189087, type: 3}
+  - {fileID: 7009151094761440485, guid: bc13aef5358fe4e46a39735cd3dd7a36, type: 3}
+  - {fileID: -3788946469315751360, guid: fb36022e1192d0d4b8075bc04046c4e2, type: 3}
   valendo: 0
-  danoExplosao: 2
+  num_drops: 0
+  danoExplosao: 3
   explosao: {fileID: 4843364846958308329, guid: 907cdabead560f14a814678f46686ebc, type: 3}
 --- !u!1 &8394139350197161258
 GameObject:

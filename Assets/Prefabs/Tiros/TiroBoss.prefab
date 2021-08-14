@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dano: 1
-  speed: 2
+  speed: 1.5
   rb: {fileID: 449678488315073986}
   player: {fileID: 0}
 --- !u!1001 &5377648871140974175
