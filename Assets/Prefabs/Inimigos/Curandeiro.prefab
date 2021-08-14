@@ -133,6 +133,7 @@ MonoBehaviour:
   tempTime: 0
   cura: 1
   inimigosDentro: []
+  CuraPrefab: {fileID: 5464710247881712765, guid: f34cc5d0a83e9c14d8f31ad986de0e20, type: 3}
 --- !u!60 &8219765946252323899
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -326,7 +327,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0, g: 0.3254902, b: 0, a: 0.39607844}
+  m_Color: {r: 0, g: 0.3254902, b: 0, a: 0.23137255}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

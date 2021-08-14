@@ -10,7 +10,7 @@ public class Curandeiro : AbstractInimigo
     public int cura;
     bool isEnter = false;
     public List<AbstractInimigo> inimigosDentro = new List<AbstractInimigo>();
-
+    public Cura CuraPrefab;
     public override void Movimento()
     {
         var velocity = new Vector2((player.transform.position.x - gameObject.transform.position.x),(player.transform.position.y - gameObject.transform.position.y));
@@ -75,7 +75,6 @@ public class Curandeiro : AbstractInimigo
                 Debug.Log(item);
                 if(item != null)
                 {
-                    Debug.Log("Curei");
                     item.TakeDamage(-cura);
                 }
                 else
@@ -84,6 +83,8 @@ public class Curandeiro : AbstractInimigo
                 }
                 
             }
+            var instancia = Instantiate(CuraPrefab, transform.position, Quaternion.identity);
+            instancia.rb.velocity = rb.velocity;
             tempTime = tempoDeCura;
         }
     }

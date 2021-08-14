@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Inimigos\Atirador.cs" />
     <Compile Include="Assets\Scripts\Scenes\Menu.cs" />
+    <Compile Include="Assets\Scripts\Itens\ItemDano.cs" />
     <Compile Include="Assets\Scripts\Scenes\Win.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Itens\ItemVida.cs" />
@@ -77,7 +78,7 @@
     <Compile Include="Assets\Scripts\WaveManagement.cs" />
     <Compile Include="Assets\Scripts\Inimigos\explosao.cs" />
     <Compile Include="Assets\Scripts\Inimigos\MamaeSuicida.cs" />
-    <Compile Include="Assets\Scripts\Itens\ItemDano.cs" />
+    <Compile Include="Assets\Scripts\Inimigos\Cura.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

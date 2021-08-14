@@ -157,8 +157,11 @@ MonoBehaviour:
   waves:
   - tempoDeEspera: 0
     inimigos:
+    - prefab: {fileID: 4041645990782010313, guid: 7433a0d6c7d3e64489955cb816fb28ee, type: 3}
+      quantidade: 1
+      intervaloEntreInimigos: 0
     - prefab: {fileID: 7798972008874040186, guid: 4816d6d4341916242af1f5de9f0634a1, type: 3}
-      quantidade: 7
+      quantidade: 3
       intervaloEntreInimigos: 0
     instrucoes: []
   inimigosNaTela: []
