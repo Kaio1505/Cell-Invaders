@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     public float ItemDanoTimer;
     public float ItemDanoTimerBase;
     public float tempoDeEfeito;
+    public bool NaveAmiga = false;
 
     AbstractTiro _original;
 
@@ -119,6 +120,8 @@ public class Player : MonoBehaviour
 
     void ResetProps()
     {
+        if(NaveAmiga)   Destroy(gameObject);
+
         tiroTriplo = false;
     }
 
