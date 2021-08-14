@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,12 @@ public class Atirador : AbstractInimigo
     public AbstractTiro projetilPrefab;
     public float tempoDeTiro;
     public float tempTime;
+    public Transform gatilho;
 
+    private void FixedUpdate()
+    {
+        Girar();
+    }
     public override void Movimento()
     {
         if(!isEnter)
@@ -29,6 +35,17 @@ public class Atirador : AbstractInimigo
         }    
     }
 
+    public void Girar()
+    {
+
+        Vector2 direction = new Vector2(
+            player.transform.position.x - transform.position.x,
+            player.transform.position.y - transform.position.y);
+        //player.transform.position - transform;
+        transform.up = direction;
+
+    }
+
     public override void Atirar()
     {
         if(isEnter)
@@ -36,7 +53,7 @@ public class Atirador : AbstractInimigo
             tempTime -= Time.deltaTime;
             if(tempTime <= 0)
             {
-                var tiro = Instantiate(projetilPrefab, Posicao(), transform.rotation);
+                var tiro = Instantiate(projetilPrefab, gatilho.position, transform.rotation);
                 tiro.player = player;
                 tiro.Movimento();
                 tempTime = tempoDeTiro;

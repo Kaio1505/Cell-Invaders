@@ -30,7 +30,7 @@ public abstract class AbstractInimigo : MonoBehaviour
         {
             Destruir();
         }
-
+        
         UpdateInimigo();
     }
 
@@ -88,7 +88,10 @@ public abstract class AbstractInimigo : MonoBehaviour
     {
 
     }
-    
+    public virtual void Girar()
+    {
+
+    }
     public abstract void Movimento();
     public abstract void DroparItem();
 }

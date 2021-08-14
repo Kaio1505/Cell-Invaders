@@ -157,7 +157,7 @@ MonoBehaviour:
   waves:
   - tempoDeEspera: 0
     inimigos:
-    - prefab: {fileID: 864736754894903610, guid: dbcab9a13c7ef3248a14910e2443cf6f, type: 3}
+    - prefab: {fileID: 7798972008874040186, guid: 4816d6d4341916242af1f5de9f0634a1, type: 3}
       quantidade: 7
       intervaloEntreInimigos: 0
     instrucoes: []
