@@ -15,6 +15,7 @@ public abstract class AbstractInimigo : MonoBehaviour
     void Start() 
     {
         Invoke("Begin", startTime);
+        StartInimigo();
     }
 
     void Update()
@@ -79,6 +80,11 @@ public abstract class AbstractInimigo : MonoBehaviour
     }
 
     public virtual void UpdateInimigo()
+    {
+
+    }
+
+    public virtual void StartInimigo()
     {
 
     }

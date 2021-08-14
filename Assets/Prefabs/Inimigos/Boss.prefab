@@ -527,7 +527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8316f7a118f322447a3c3569dde063ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 10
+  vida: 30
   dano: 0
   speed: 2
   rb: {fileID: 5419905360071736788}
@@ -542,6 +542,7 @@ MonoBehaviour:
   - {fileID: 2980758489772730174}
   - {fileID: 5261683316900476518}
   projetilPrefab: {fileID: -5378856843237581399, guid: 7ec78e763da50a047bfa5d0a612697a8, type: 3}
+  bossPrefab: {fileID: -1325656322744503961, guid: 33268c04d07808544b8b319b497b37cd, type: 3}
   suicidaPrefab:
   - {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
   - {fileID: -2678673601068466208, guid: 1cfec669ab249a342a41dcd3ab437899, type: 3}
