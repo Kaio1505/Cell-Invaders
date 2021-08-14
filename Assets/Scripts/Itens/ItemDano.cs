@@ -8,9 +8,9 @@ public class ItemDano : AbstractItem
 
     public override void Efeito(Player player)
     {
+        player.ResetProps();
         player.dano = dano;
         player.Reset(false);
         base.Efeito(player);
-
     }
 }

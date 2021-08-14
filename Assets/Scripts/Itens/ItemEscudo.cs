@@ -6,6 +6,7 @@ public class ItemEscudo : AbstractItem
 {
     public override void Efeito(Player player)
     {
+        player.ResetProps();
         player.isEscudo = true;
         player.escudo.SetActive(true);
         player.Reset(false);

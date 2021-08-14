@@ -8,6 +8,7 @@ public class ItemNaveAmiga :  AbstractItem
 
     public override void Efeito(Player player)
     {
+        player.ResetProps();
         var playerAmigo = Instantiate(playerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
         playerAmigo.NaveAmiga = true;
         playerAmigo.tempoDeEfeito = player.tempoDeEfeito;

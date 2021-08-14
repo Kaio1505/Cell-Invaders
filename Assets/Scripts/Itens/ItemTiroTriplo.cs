@@ -6,6 +6,7 @@ public class ItemTiroTriplo : AbstractItem
 {
     public override void Efeito(Player player)
     {
+        player.ResetProps();
         player.tiroTriplo = true;
         player.Reset(false);
 
