@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\Inimigos\Curandeiro.cs" />
      <Compile Include="Assets\Scripts\Tiros\TiroInimigoFrezzer.cs" />
      <Compile Include="Assets\Scripts\Tiros\TiroTeleguiado.cs" />
+     <Compile Include="Assets\Scripts\Inimigos\Boss.cs" />
      <Compile Include="Assets\Scripts\Inimigos\Suicida.cs" />
      <Compile Include="Assets\Scripts\Abstracts\AbstractItem.cs" />
      <Compile Include="Assets\Scripts\Tiros\TiroBasico.cs" />

@@ -6,7 +6,12 @@ public class Boss : AbstractInimigo
 {   
     bool movimento = true;
     bool praCima = false;
-    
+    public List<Transform> gatilhos;
+    public AbstractTiro projetilPrefab;
+    public float tempoDeTiroBasico;
+
+    float tempTimeTiroBasico = -1f;
+
     public override void UpdateInimigo()
     {
         
@@ -27,6 +32,18 @@ public class Boss : AbstractInimigo
             }
         }
 
+    }
+
+    public override void Atirar()
+    {
+        tempTimeTiroBasico -= Time.deltaTime;
+        if(tempTimeTiroBasico <= 0)
+        {
+            var tiro = Instantiate(projetilPrefab, gatilhos[Random.Range(0,gatilhos.Count)].position, transform.rotation);
+            tiro.player = player;
+            tiro.Movimento();
+            tempTimeTiroBasico = tempoDeTiroBasico;
+        }
     }
 
     public override void DroparItem()

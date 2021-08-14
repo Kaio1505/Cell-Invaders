@@ -57,7 +57,7 @@ public class WaveManagement : MonoBehaviour
             {
                 StartCoroutine(MudaCena("Winner"));
             }
-            else if(!fightBoss)
+            else if(waves.Count == waveAtual)
             {
                 var inimigo = Instantiate(bossPrefab, new Vector3(0.06f, 2.1f, 0f), Quaternion.identity);
                 inimigosNaTela = new List<AbstractInimigo>();
