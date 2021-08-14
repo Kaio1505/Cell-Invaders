@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\Itens\ItemVidaPlus.cs" />
      <Compile Include="Assets\Scripts\Inimigos\Curandeiro.cs" />
      <Compile Include="Assets\Scripts\Tiros\TiroInimigoFrezzer.cs" />
+     <Compile Include="Assets\Scripts\Itens\ItemNaveAmiga.cs" />
      <Compile Include="Assets\Scripts\Tiros\TiroTeleguiado.cs" />
      <Compile Include="Assets\Scripts\Inimigos\Boss.cs" />
      <Compile Include="Assets\Scripts\Itens\ItemTempoPlus.cs" />

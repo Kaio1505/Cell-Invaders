@@ -12,12 +12,14 @@ public class Player : MonoBehaviour
     public Transform gatilhoCentral;
     public Transform gatilhoDireito;
     public Transform gatilhoEsquerdo;
+    public GameObject escudo;
     public bool tiroTriplo;
     public bool ItemDano = false;
     public float ItemDanoTimer;
     public float ItemDanoTimerBase;
     public float tempoDeEfeito;
     public bool NaveAmiga = false;
+    public bool isEscudo = true;
 
     AbstractTiro _original;
 
@@ -91,14 +93,18 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int dano)
     {
-        vida -= dano;
+        if(!isEscudo) vida -= dano;
     }
 
     public void TakeDamage(int dano, float taxaSpeed, int tempoDeEfeito)
     {
-        TakeDamage(dano);
-        speed *= taxaSpeed;
-        StartCoroutine(ReturnSpeed(taxaSpeed, tempoDeEfeito));
+        if(!isEscudo)
+        {
+            TakeDamage(dano);
+            speed *= taxaSpeed;
+            StartCoroutine(ReturnSpeed(taxaSpeed, tempoDeEfeito));
+        }
+        
     }
 
     public IEnumerator ReturnSpeed(float taxaSpeed, float tempoDeEfeito)
@@ -123,6 +129,8 @@ public class Player : MonoBehaviour
         if(NaveAmiga)   Destroy(gameObject);
 
         tiroTriplo = false;
+        escudo.SetActive(false);
+        isEscudo = false;
     }
 
     void ResetTiroPrefab()
