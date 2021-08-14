@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boss : AbstractInimigo
 {   
@@ -78,11 +79,20 @@ public class Boss : AbstractInimigo
         }
     }
 
+    void OnTriggerEnter2D(Collider2D collision) 
+    {
+        if(collision.CompareTag("Player"))
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+        OnTriggerEnterInimigo(collision);
+    }
+
     public IEnumerator Special()
     {
         yield return new WaitForSeconds(3f);
 
-        var numTiros = 0;
+        var numTiros = 25;
         if(UmTercoVida)
             numTiros = 50;
 
@@ -105,8 +115,17 @@ public class Boss : AbstractInimigo
 
     Vector3 GetPosition()
     {
-        var x = Random.Range(0, 10)%2 == 0 ? 1 : -1;
-        return new Vector3(x*Random.Range(1.75f, 2.75f), Random.Range(-2.5f, 2.5f), 0);
+        if(Random.Range(0,2) == 0)
+        {
+            var x = Random.Range(0, 10)%2 == 0 ? 1 : -1;
+            return new Vector3(x*Random.Range(1.75f, 2.75f), Random.Range(-2.5f, 2.5f), 0);
+        }
+        else
+        {
+            var y = Random.Range(0, 10)%2 == 0 ? 1 : -1;
+            return new Vector3(Random.Range(-1.75f, 1.75f), y*Random.Range(1.2f, 2.0f), 0);
+        }
+        
     }
 
     AbstractInimigo GetPrefab()

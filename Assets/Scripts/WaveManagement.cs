@@ -73,7 +73,7 @@ public class WaveManagement : MonoBehaviour
             }
         }
 
-        if(player.vida <= 0)
+        if(player.vida <= 0 || player == null)
         {
             StartCoroutine(MudaCena("GameOver"));
         }
@@ -132,8 +132,17 @@ public class WaveManagement : MonoBehaviour
 
     Vector3 GetPosition()
     {
-        var x = Random.Range(0, 10)%2 == 0 ? 1 : -1;
-        return new Vector3(x*Random.Range(1.75f, 2.75f), Random.Range(-2.5f, 2.5f), 0);
+        if(Random.Range(0,2) == 0)
+        {
+            var x = Random.Range(0, 10)%2 == 0 ? 1 : -1;
+            return new Vector3(x*Random.Range(1.75f, 2.75f), Random.Range(-2.5f, 2.5f), 0);
+        }
+        else
+        {
+            var y = Random.Range(0, 10)%2 == 0 ? 1 : -1;
+            return new Vector3(Random.Range(-1.75f, 1.75f), y*Random.Range(1.2f, 2.0f), 0);
+        }
+        
     }
 
     IEnumerator MudaCena(string name)

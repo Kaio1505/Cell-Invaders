@@ -17,12 +17,9 @@ public class Atirador : AbstractInimigo
     }
     public override void Movimento()
     {
-        if(!isEnter)
-        {
-            var velocity = new Vector2((player.transform.position.x - gameObject.transform.position.x),(player.transform.position.y - gameObject.transform.position.y));
-            velocity.Normalize();
-            rb.velocity = velocity*speed;
-        }
+        var velocity = new Vector2((player.transform.position.x - gameObject.transform.position.x),(player.transform.position.y - gameObject.transform.position.y));
+        velocity.Normalize();
+        rb.velocity = velocity*speed;
     }
 
     public override void OnTriggerEnterInimigo(Collider2D collision) 
@@ -30,9 +27,15 @@ public class Atirador : AbstractInimigo
         if(collision.CompareTag("Parede"))
         {
             isEnter = true;
-            //TO DO: Randow para mandar no lugar de 0,5 para 1,5
-            Invoke("Stop", 1);
         }    
+    }
+
+    void OnTriggerExit2D(Collider2D collision) {
+        
+        if(collision.CompareTag("Parede"))
+        {
+            Invoke("Stop", Random.Range(0.5f, 0.9f));
+        } 
     }
 
     public override void Girar()
@@ -59,16 +62,9 @@ public class Atirador : AbstractInimigo
         }
     }
 
-    Vector3 Posicao()
-    {
-        //TO DO: RETORNAR POSICAO
-        return new Vector3(gameObject.transform.position.x + player.transform.position.x/5, gameObject.transform.position.y + player.transform.position.y/5, 0);
-        //return gatilho.position;
-    }
-
     void Stop()
     {
-        rb.velocity = new Vector2(0, 0);
+        speed = 0;
     }
 
     public override void DroparItem()
