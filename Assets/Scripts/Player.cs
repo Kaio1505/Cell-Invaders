@@ -16,6 +16,14 @@ public class Player : MonoBehaviour
     public bool ItemDano = false;
     public float ItemDanoTimer;
     public float ItemDanoTimerBase;
+    public float tempoDeEfeito;
+
+    AbstractTiro _original;
+
+    void Start()
+    {
+        _original = projetilPrefab;
+    }
 
     void Update() 
     {
@@ -41,7 +49,6 @@ public class Player : MonoBehaviour
             projetilPrefab.dano -= 10;
             ItemDanoTimer = ItemDanoTimerBase;
             ItemDano = false;
-            Debug.Log("ItemDano é false!");
         }
 
     }
@@ -103,4 +110,22 @@ public class Player : MonoBehaviour
     {
         gameObject.SetActive(value);
     }
+
+    public void Reset(bool isTiroPrefab)
+    {
+        if(isTiroPrefab) Invoke("ResetTiroPrefab", tempoDeEfeito);
+        Invoke("ResetProps", tempoDeEfeito);
+    }
+
+    void ResetProps()
+    {
+        tiroTriplo = false;
+    }
+
+    void ResetTiroPrefab()
+    {
+        projetilPrefab = _original;
+    }
+
+
 }

@@ -132,7 +132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   vida: 5
-  max: 5
+  max: 10
   rb: {fileID: 1311640600635965045}
   projetilPrefab: {fileID: 4563441177097120725, guid: 8e23888baa63ac643aa048c0d1cffd08, type: 3}
   gatilhoCentral: {fileID: 1311640599427856597}
@@ -142,6 +142,7 @@ MonoBehaviour:
   ItemDano: 0
   ItemDanoTimer: 20
   ItemDanoTimerBase: 20
+  tempoDeEfeito: 5
 --- !u!50 &1311640600635965045
 Rigidbody2D:
   serializedVersion: 4
