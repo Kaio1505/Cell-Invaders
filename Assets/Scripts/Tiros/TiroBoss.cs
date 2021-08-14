@@ -10,7 +10,7 @@ public class TiroBoss : TiroInimigo
         var direcao = DirecaoPlayer();
         transform.up = direcao;
         direcao.Normalize();
-        rb.velocity = direcao*speed;
+        rb.velocity = direcao*speed * Random.Range(0.4f, 0.7f);
     }
 
     Vector2 DirecaoPlayer()

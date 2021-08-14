@@ -92,19 +92,21 @@ public class Boss : AbstractInimigo
     {
         yield return new WaitForSeconds(3f);
 
-        var numTiros = 25;
+        var numTiros = 20;
         if(UmTercoVida)
-            numTiros = 50;
+            numTiros = 30;
 
         for(int i = 0; i < numTiros; i++)
         {
             var tiro = Instantiate(bossPrefab, GetPosition(), Quaternion.identity);
             tiro.player = player;
-            yield return new WaitForSeconds(0.7f);
+            yield return new WaitForSeconds(1.1f);
             tiro.Movimento();
         }
 
         yield return new WaitForSeconds(3f);
+        tempTimeTiroBasico = tempoDeTiroBasico;
+tempTimeSuicida = tempoSuicida;
         movimento = true;
     }
 

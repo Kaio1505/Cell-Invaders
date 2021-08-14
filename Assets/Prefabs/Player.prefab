@@ -59,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 1311640600635965042}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.29516196, y: -0.493, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children:
   - {fileID: 1311640599427856597}
   - {fileID: 1311640601328674825}
@@ -141,12 +141,10 @@ MonoBehaviour:
   gatilhoEsquerdo: {fileID: 1311640601356344904}
   escudo: {fileID: 9105209741538912819}
   tiroTriplo: 0
-  ItemDano: 0
-  ItemDanoTimer: 20
-  ItemDanoTimerBase: 20
   tempoDeEfeito: 5
   NaveAmiga: 0
   isEscudo: 0
+  dano: 0
 --- !u!50 &1311640600635965045
 Rigidbody2D:
   serializedVersion: 4
