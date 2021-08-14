@@ -60,10 +60,12 @@
      <Compile Include="Assets\Scripts\Tiros\TiroInimigo.cs" />
      <Compile Include="Assets\Scripts\Abstracts\AbstractInimigo.cs" />
      <Compile Include="Assets\Scripts\Tiros\TiroCanhao.cs" />
+     <Compile Include="Assets\Scripts\Itens\ItemVidaPlus.cs" />
      <Compile Include="Assets\Scripts\Inimigos\Curandeiro.cs" />
      <Compile Include="Assets\Scripts\Tiros\TiroInimigoFrezzer.cs" />
      <Compile Include="Assets\Scripts\Tiros\TiroTeleguiado.cs" />
      <Compile Include="Assets\Scripts\Inimigos\Boss.cs" />
+     <Compile Include="Assets\Scripts\Itens\ItemTempoPlus.cs" />
      <Compile Include="Assets\Scripts\Inimigos\Suicida.cs" />
      <Compile Include="Assets\Scripts\Abstracts\AbstractItem.cs" />
      <Compile Include="Assets\Scripts\Tiros\TiroBasico.cs" />
@@ -73,6 +75,7 @@
      <Compile Include="Assets\Scripts\Animations\explosao.cs" />
      <Compile Include="Assets\Scripts\Animations\Cura.cs" />
      <Compile Include="Assets\Scripts\Inimigos\MamaeSuicida.cs" />
+     <Compile Include="Assets\Scripts\Itens\ItemTiroTriplo.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

@@ -9,7 +9,7 @@ public class TiroCanhao : TiroBasico
 
     void OnTriggerEnter2D(Collider2D collision) 
     {
-        if(collision.CompareTag("Inimigo"))
+        if(collision.CompareTag("Inimigo") || collision.CompareTag("Boss"))
         {
             var inimigo = collision.GetComponent<AbstractInimigo>();
             if(!inimigos.Contains(inimigo))
