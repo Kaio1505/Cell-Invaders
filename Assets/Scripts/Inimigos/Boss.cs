@@ -70,7 +70,7 @@ public class Boss : AbstractInimigo
 
             if(tempTimeSuicida <= 0)
             {
-                var inimigo = Instantiate(suicidaPrefab[0], gatilhos[Random.Range(0,gatilhos.Count)].position, Quaternion.identity);
+                var inimigo = Instantiate(GetPrefab(), gatilhos[Random.Range(0,gatilhos.Count)].position, Quaternion.identity);
                 inimigo.player = player;
                 inimigo.startTime = 0;
                 tempTimeSuicida = tempoSuicida;
@@ -82,7 +82,7 @@ public class Boss : AbstractInimigo
     {
         yield return new WaitForSeconds(3f);
 
-        var numTiros = 25;
+        var numTiros = 0;
         if(UmTercoVida)
             numTiros = 50;
 
@@ -90,7 +90,7 @@ public class Boss : AbstractInimigo
         {
             var tiro = Instantiate(bossPrefab, GetPosition(), Quaternion.identity);
             tiro.player = player;
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.7f);
             tiro.Movimento();
         }
 
@@ -107,5 +107,26 @@ public class Boss : AbstractInimigo
     {
         var x = Random.Range(0, 10)%2 == 0 ? 1 : -1;
         return new Vector3(x*Random.Range(1.75f, 2.75f), Random.Range(-2.5f, 2.5f), 0);
+    }
+
+    AbstractInimigo GetPrefab()
+    {
+        var num = Random.Range(0, 4);
+        if(UmTercoVida)
+        {
+            if(num == 3) return suicidaPrefab[2];
+            if(num >= 1) return suicidaPrefab[1];
+            return suicidaPrefab[0];
+            
+        }
+        else if(DoisTercoVida)
+        {
+            if(num > 1) return suicidaPrefab[1];
+            return suicidaPrefab[0];
+        }
+        else
+        {
+            return suicidaPrefab[0];
+        }
     }
 }

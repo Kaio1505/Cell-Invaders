@@ -35,15 +35,13 @@ public class Atirador : AbstractInimigo
         }    
     }
 
-    public void Girar()
+    public override void Girar()
     {
-
         Vector2 direction = new Vector2(
             player.transform.position.x - transform.position.x,
             player.transform.position.y - transform.position.y);
         //player.transform.position - transform;
         transform.up = direction;
-
     }
 
     public override void Atirar()

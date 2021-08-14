@@ -548,4 +548,4 @@ MonoBehaviour:
   - {fileID: -2678673601068466208, guid: 1cfec669ab249a342a41dcd3ab437899, type: 3}
   - {fileID: 8469438610790035147, guid: a038430ade5a06c46a44563bda331e4e, type: 3}
   tempoDeTiroBasico: 3
-  tempoSuicida: 10
+  tempoSuicida: 1

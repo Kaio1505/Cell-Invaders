@@ -32,7 +32,6 @@ public class Player : MonoBehaviour
         //ItemDano
         if (ItemDano)
         {
-            Debug.Log("ItemDano é true!");
             ItemDanoTimer -= Time.deltaTime;
         }
 

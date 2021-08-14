@@ -154,16 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 1311640600635965044, guid: 5ce45bf6cbf34774aae367c859098091, type: 3}
   pai: {fileID: 2019433586}
-  waves:
-  - tempoDeEspera: 0
-    inimigos:
-    - prefab: {fileID: 4041645990782010313, guid: 7433a0d6c7d3e64489955cb816fb28ee, type: 3}
-      quantidade: 1
-      intervaloEntreInimigos: 0
-    - prefab: {fileID: 7798972008874040186, guid: 4816d6d4341916242af1f5de9f0634a1, type: 3}
-      quantidade: 3
-      intervaloEntreInimigos: 0
-    instrucoes: []
+  waves: []
   inimigosNaTela: []
   bossPrefab: {fileID: -7255886582445830711, guid: 4609188d9ecda1f4daeafae43cbb1579, type: 3}
 --- !u!4 &35261759

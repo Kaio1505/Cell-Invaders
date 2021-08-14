@@ -8,7 +8,6 @@ public class ItemDano : AbstractItem
     {
         if (player.ItemDano == false)
         {
-            Debug.Log("Efeito");
             player.ItemDano = true;
             player.projetilPrefab.dano += 10;
             base.Efeito(player);
