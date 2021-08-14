@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class ItemDano : AbstractItem
 {
+    public int dano;
+
     public override void Efeito(Player player)
     {
-        if (player.ItemDano == false)
-        {
-            player.ItemDano = true;
-            player.projetilPrefab.dano += 10;
-            base.Efeito(player);
-        }
+        player.dano = dano;
+        player.Reset(false);
+        base.Efeito(player);
 
     }
 }

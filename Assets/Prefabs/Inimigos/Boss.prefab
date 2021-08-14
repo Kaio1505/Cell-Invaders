@@ -527,7 +527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8316f7a118f322447a3c3569dde063ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 30
+  vida: 100
   dano: 0
   speed: 2
   rb: {fileID: 5419905360071736788}
@@ -547,5 +547,5 @@ MonoBehaviour:
   - {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
   - {fileID: -2678673601068466208, guid: 1cfec669ab249a342a41dcd3ab437899, type: 3}
   - {fileID: 8469438610790035147, guid: a038430ade5a06c46a44563bda331e4e, type: 3}
-  tempoDeTiroBasico: 3
-  tempoSuicida: 1
+  tempoDeTiroBasico: 50
+  tempoSuicida: 50

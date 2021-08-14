@@ -14,12 +14,10 @@ public class Player : MonoBehaviour
     public Transform gatilhoEsquerdo;
     public GameObject escudo;
     public bool tiroTriplo;
-    public bool ItemDano = false;
-    public float ItemDanoTimer;
-    public float ItemDanoTimerBase;
     public float tempoDeEfeito;
     public bool NaveAmiga = false;
     public bool isEscudo = true;
+    public int dano = 0;
 
     AbstractTiro _original;
 
@@ -36,25 +34,8 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         Movimento();
-        BuffDano();
     }
-    public void BuffDano()
-    {
-        //ItemDano
-        if (ItemDano)
-        {
-            ItemDanoTimer -= Time.deltaTime;
-        }
-
-
-        if (ItemDanoTimer < 0)
-        {
-            projetilPrefab.dano -= 10;
-            ItemDanoTimer = ItemDanoTimerBase;
-            ItemDano = false;
-        }
-
-    }
+    
     void Movimento()
     {
         //velocidade da nave
@@ -71,13 +52,16 @@ public class Player : MonoBehaviour
         {
             var tiro = Instantiate(projetilPrefab, gatilhoCentral.position, transform.rotation);
             tiro.Movimento();
+            tiro.dano += dano;
 
             if(tiroTriplo)
             {
                 tiro = Instantiate(projetilPrefab, gatilhoDireito.position, transform.rotation);
                 tiro.Movimento();
+                tiro.dano += dano;
                 tiro = Instantiate(projetilPrefab, gatilhoEsquerdo.position, transform.rotation);
                 tiro.Movimento();
+                tiro.dano += dano;
             }
         }
     }
@@ -131,6 +115,7 @@ public class Player : MonoBehaviour
         tiroTriplo = false;
         escudo.SetActive(false);
         isEscudo = false;
+        dano = 0;
     }
 
     void ResetTiroPrefab()
