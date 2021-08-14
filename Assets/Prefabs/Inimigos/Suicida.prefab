@@ -132,6 +132,7 @@ MonoBehaviour:
   mortoPorTiro: 1
   itensDrop:
   - {fileID: -705599846814931175, guid: 955bddf7babd3f945af2810dee6357c2, type: 3}
+  - {fileID: 7009151094761440485, guid: bc13aef5358fe4e46a39735cd3dd7a36, type: 3}
   valendo: 0
 --- !u!50 &4586350348647485089
 Rigidbody2D:

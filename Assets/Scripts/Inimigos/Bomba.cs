@@ -36,7 +36,19 @@ public class Bomba : Suicida
             player.TakeDamage(danoExplosao);
         }
         Instantiate(explosao, gameObject.transform.position, Quaternion.identity);
+        DroparItem();
         Destroy(gameObject);
+    }
+    public override void DroparItem()
+    {
+        if (mortoPorTiro)
+        {
+            if (Random.Range(0, 3) == 1)
+            {
+                Debug.Log("dropar item");
+                var item = Instantiate(itensDrop[Random.Range(0, itensDrop.Length)], transform.position, transform.rotation);
+            }
+        }
     }
 
 }

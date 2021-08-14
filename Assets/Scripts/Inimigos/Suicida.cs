@@ -8,14 +8,15 @@ public class Suicida : AbstractInimigo
         velocity.Normalize();
         rb.velocity = velocity*speed;
     }
-    
+
     public override void DroparItem()
     {
-        if(mortoPorTiro)
+        if (mortoPorTiro)
         {
-            if(Random.Range(0, 3) == 1)
+            if (Random.Range(0, 3) == 1)
             {
-                var item = Instantiate(itensDrop[0], transform.position, transform.rotation);
+                Debug.Log("dropar item");
+                var item = Instantiate(itensDrop[Random.Range(0, itensDrop.Length)], transform.position, transform.rotation);
             }
         }
     }

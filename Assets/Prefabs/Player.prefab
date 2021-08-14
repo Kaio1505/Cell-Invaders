@@ -139,6 +139,9 @@ MonoBehaviour:
   gatilhoDireito: {fileID: 1311640601328674825}
   gatilhoEsquerdo: {fileID: 1311640601356344904}
   tiroTriplo: 0
+  ItemDano: 0
+  ItemDanoTimer: 20
+  ItemDanoTimerBase: 20
 --- !u!50 &1311640600635965045
 Rigidbody2D:
   serializedVersion: 4

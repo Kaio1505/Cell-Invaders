@@ -13,6 +13,9 @@ public class Player : MonoBehaviour
     public Transform gatilhoDireito;
     public Transform gatilhoEsquerdo;
     public bool tiroTriplo;
+    public bool ItemDano = false;
+    public float ItemDanoTimer;
+    public float ItemDanoTimerBase;
 
     void Update() 
     {
@@ -22,8 +25,27 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         Movimento();
+        BuffDano();
     }
+    public void BuffDano()
+    {
+        //ItemDano
+        if (ItemDano)
+        {
+            Debug.Log("ItemDano é true!");
+            ItemDanoTimer -= Time.deltaTime;
+        }
 
+
+        if (ItemDanoTimer < 0)
+        {
+            projetilPrefab.dano -= 10;
+            ItemDanoTimer = ItemDanoTimerBase;
+            ItemDano = false;
+            Debug.Log("ItemDano é false!");
+        }
+
+    }
     void Movimento()
     {
         //velocidade da nave

@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using System;
+
 using UnityEngine;
 
 public class Curandeiro : AbstractInimigo
@@ -58,7 +58,7 @@ public class Curandeiro : AbstractInimigo
         if(collision.CompareTag("Inimigo"))
         {
             var inimigo = collision.GetComponent<AbstractInimigo>();
-            if(Math.Abs(gameObject.transform.position.x - inimigo.transform.position.x) + Math.Abs(gameObject.transform.position.y - inimigo.transform.position.y) > 0.1 )
+            if(Mathf.Abs(gameObject.transform.position.x - inimigo.transform.position.x) + Mathf.Abs(gameObject.transform.position.y - inimigo.transform.position.y) > 0.1 )
             {
                 inimigosDentro.Remove(collision.GetComponent<AbstractInimigo>());
             }
@@ -87,8 +87,22 @@ public class Curandeiro : AbstractInimigo
             tempTime = tempoDeCura;
         }
     }
+    public override void Destruir()
+    {
+        DroparItem();
+        base.Destruir();   
+    }
+
 
     public override void DroparItem()
     {
+        if (mortoPorTiro)
+        {
+            if (Random.Range(0, 3) == 1)
+            {
+                Debug.Log("dropar item");
+                var item = Instantiate(itensDrop[Random.Range(0, itensDrop.Length)], transform.position, transform.rotation);
+            }
+        }
     }
 }

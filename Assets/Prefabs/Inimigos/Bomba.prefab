@@ -143,7 +143,8 @@ MonoBehaviour:
   startTime: 0
   mortoPorTiro: 1
   itensDrop:
-  - {fileID: 0}
+  - {fileID: 7009151094761440485, guid: bc13aef5358fe4e46a39735cd3dd7a36, type: 3}
+  - {fileID: -705599846814931175, guid: 955bddf7babd3f945af2810dee6357c2, type: 3}
   valendo: 0
   danoExplosao: 2
   explosao: {fileID: 4843364846958308329, guid: 907cdabead560f14a814678f46686ebc, type: 3}

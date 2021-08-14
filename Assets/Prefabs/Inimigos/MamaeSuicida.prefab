@@ -151,7 +151,7 @@ MonoBehaviour:
   player: {fileID: 0}
   startTime: 0
   mortoPorTiro: 1
-  itensDrop:
-  - {fileID: 0}
+  itensDrop: []
+  valendo: 0
   filhos: 5
   filhoPrefab: {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}

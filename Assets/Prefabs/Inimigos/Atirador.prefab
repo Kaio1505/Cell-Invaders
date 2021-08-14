@@ -153,7 +153,9 @@ MonoBehaviour:
   startTime: 0
   mortoPorTiro: 1
   itensDrop:
-  - {fileID: 0}
+  - {fileID: -705599846814931175, guid: 955bddf7babd3f945af2810dee6357c2, type: 3}
+  - {fileID: 7009151094761440485, guid: bc13aef5358fe4e46a39735cd3dd7a36, type: 3}
+  valendo: 0
   projetilPrefab: {fileID: -5378856843237581399, guid: 7ec78e763da50a047bfa5d0a612697a8, type: 3}
   tempoDeTiro: 3
   tempTime: -1
