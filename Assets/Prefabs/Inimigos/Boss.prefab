@@ -542,4 +542,9 @@ MonoBehaviour:
   - {fileID: 2980758489772730174}
   - {fileID: 5261683316900476518}
   projetilPrefab: {fileID: -5378856843237581399, guid: 7ec78e763da50a047bfa5d0a612697a8, type: 3}
+  suicidaPrefab:
+  - {fileID: 4586350348647485102, guid: 46c70378aa558a84f9d0e769b27502cd, type: 3}
+  - {fileID: -2678673601068466208, guid: 1cfec669ab249a342a41dcd3ab437899, type: 3}
+  - {fileID: 8469438610790035147, guid: a038430ade5a06c46a44563bda331e4e, type: 3}
   tempoDeTiroBasico: 3
+  tempoSuicida: 10

@@ -8,9 +8,12 @@ public class Boss : AbstractInimigo
     bool praCima = false;
     public List<Transform> gatilhos;
     public AbstractTiro projetilPrefab;
+    public List<AbstractInimigo> suicidaPrefab;
     public float tempoDeTiroBasico;
+    public float tempoSuicida;
 
     float tempTimeTiroBasico = -1f;
+    float tempTimeSuicida = 5f;
 
     public override void UpdateInimigo()
     {
@@ -37,12 +40,22 @@ public class Boss : AbstractInimigo
     public override void Atirar()
     {
         tempTimeTiroBasico -= Time.deltaTime;
+        tempTimeSuicida -= Time.deltaTime;
+
         if(tempTimeTiroBasico <= 0)
         {
             var tiro = Instantiate(projetilPrefab, gatilhos[Random.Range(0,gatilhos.Count)].position, transform.rotation);
             tiro.player = player;
             tiro.Movimento();
             tempTimeTiroBasico = tempoDeTiroBasico;
+        }
+
+        if(tempTimeSuicida <= 0)
+        {
+            var inimigo = Instantiate(suicidaPrefab[0], gatilhos[Random.Range(0,gatilhos.Count)].position, Quaternion.identity);
+            inimigo.player = player;
+            inimigo.startTime = 0;
+            tempTimeSuicida = tempoSuicida;
         }
     }
 
