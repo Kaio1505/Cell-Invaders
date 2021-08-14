@@ -37,7 +37,9 @@ public class WaveManagement : MonoBehaviour
     public Canvas pai;
     public List<Wave> waves = new List<Wave>();
     public List<AbstractInimigo> inimigosNaTela = new List<AbstractInimigo>();
+    public Boss bossPrefab;
 
+    bool fightBoss = false;
     bool comecou = false;
     Player player;
     int waveAtual = 0;
@@ -51,9 +53,17 @@ public class WaveManagement : MonoBehaviour
     {
         if(!existeInimigos(inimigosNaTela) && !comecou)
         {
-            if(waves.Count == waveAtual)
+            if(waves.Count == waveAtual && fightBoss)
             {
                 StartCoroutine(MudaCena("Winner"));
+            }
+            else if(!fightBoss)
+            {
+                var inimigo = Instantiate(bossPrefab, new Vector3(0.06f, 2.1f, 0f), Quaternion.identity);
+                inimigosNaTela = new List<AbstractInimigo>();
+                inimigo.player = player;
+                inimigosNaTela.Add(inimigo);
+                fightBoss = true;
             }
             else
             {

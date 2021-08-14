@@ -7,7 +7,7 @@ public class TiroTeleguiado : TiroBasico
     AbstractInimigo inimigo = null;
     void OnTriggerEnter2D(Collider2D collision) 
     {
-        if(collision.CompareTag("Inimigo"))
+        if(collision.CompareTag("Inimigo") || collision.CompareTag("Boss"))
         {
             if(inimigo != null)
             {

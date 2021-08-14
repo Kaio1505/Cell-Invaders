@@ -26,7 +26,7 @@ public class TiroCanhao : TiroBasico
 
     void OnTriggerExit2D(Collider2D collision) 
     {
-        if(collision.CompareTag("Inimigo"))
+        if(collision.CompareTag("Inimigo") || collision.CompareTag("Boss"))
         {
             inimigos.Remove(collision.GetComponent<AbstractInimigo>());
         }    

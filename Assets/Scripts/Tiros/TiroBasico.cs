@@ -33,7 +33,7 @@ public class TiroBasico : AbstractTiro
 
     void OnTriggerEnter2D(Collider2D collision) 
     {
-        if(collision.CompareTag("Inimigo"))
+        if(collision.CompareTag("Inimigo") || collision.CompareTag("Boss"))
         {
             ColliderInimigo(collision);
             Destruir();

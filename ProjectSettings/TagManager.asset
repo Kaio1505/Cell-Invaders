@@ -8,6 +8,7 @@ TagManager:
   - Inimigo
   - Item
   - Wave
+  - Boss
   layers:
   - Default
   - TransparentFX
