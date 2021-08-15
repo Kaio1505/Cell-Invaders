@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 15
-  dano: 5
+  dano: 3
   speed: 0.5
   rb: {fileID: 3830322006211369546}
   player: {fileID: 0}

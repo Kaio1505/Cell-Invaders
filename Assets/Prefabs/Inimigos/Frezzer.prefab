@@ -80,6 +80,10 @@ PrefabInstance:
       value: 0.4273318
       objectReference: {fileID: 0}
     - target: {fileID: 7798972008874040186, guid: 4816d6d4341916242af1f5de9f0634a1, type: 3}
+      propertyPath: dano
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798972008874040186, guid: 4816d6d4341916242af1f5de9f0634a1, type: 3}
       propertyPath: projetilPrefab
       value: 
       objectReference: {fileID: 2498618077879306033, guid: 37dc89424f438ad47aaa8a1c0efed0cc, type: 3}

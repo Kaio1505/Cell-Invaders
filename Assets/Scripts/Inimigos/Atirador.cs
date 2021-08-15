@@ -34,7 +34,7 @@ public class Atirador : AbstractInimigo
         
         if(collision.CompareTag("Parede"))
         {
-            Invoke("Stop", Random.Range(0.5f, 0.9f));
+            Invoke("Stop", Random.Range(0.7f, 0.9f));
         } 
     }
 

@@ -132,8 +132,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  vida: 5
-  max: 10
+  vida: 20
+  max: 35
   rb: {fileID: 1311640600635965045}
   projetilPrefab: {fileID: 4563441177097120725, guid: 8e23888baa63ac643aa048c0d1cffd08, type: 3}
   gatilhoCentral: {fileID: 1311640599427856597}

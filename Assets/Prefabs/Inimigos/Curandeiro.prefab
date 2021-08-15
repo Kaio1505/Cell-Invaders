@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 637bfe8837bb8ca41b7ecc54a1346b9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 20
+  vida: 10
   dano: 2
   speed: 0.25
   rb: {fileID: 7274505045487954209}

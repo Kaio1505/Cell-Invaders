@@ -16,8 +16,8 @@ MonoBehaviour:
   speed: 2
   rb: {fileID: 3015631691980082689}
   player: {fileID: 0}
-  taxaSpeed: 0.25
-  tempoDeEfeito: 5
+  taxaSpeed: 0.15
+  tempoDeEfeito: 2
 --- !u!1001 &4219322187776501624
 PrefabInstance:
   m_ObjectHideFlags: 0

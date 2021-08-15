@@ -1034,4 +1034,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/CellInvaders.unity
   - Assets/Scenes/GameOver.unity
   - Assets/Scenes/Winner.unity
-  playerPath: C:/Users/Kaio Vinicius/Desktop/teste/Cell-Invaders/Builds/Cell_invaders.exe
+  playerPath: C:/Users/User/Documents/GitHub/Cell-Invaders/Builds/Cell_invaders.exe
